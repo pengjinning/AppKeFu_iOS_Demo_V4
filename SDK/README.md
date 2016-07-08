@@ -1,7 +1,7 @@
 
 
 
-# AppKeFu_SDK 3.0 使用说明
+# AppKeFu_SDK 4.0 使用说明
 
 具体参考：http://appkefu.com/AppKeFu/tutorial-iOS3.html
 
