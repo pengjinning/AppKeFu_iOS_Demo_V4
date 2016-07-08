@@ -1,6 +1,18 @@
 # 微客服
 iOS客服demo 4.x 版本 - 致力于为开发者提供极致用户体验的SDK
 
+## 预览
+
+<img src="/images/chat_list.png" alt="功能一览" width="260px" />
+<img src="/images/chat_buy.png" alt="电商" width="260px" />
+<img src="/images/chat_face.png" alt="扩展" width="260px" />
+<img src="/images/chat_voice.png" alt="语音" width="260px" />
+<img src="/images/chat_robot.png" alt="智能问答" width="260px" />
+<img src="/images/chat_rate.png" alt="满意度" width="260px" />
+<img src="/images/chat_faq.png" alt="常见问题" width="260px" />
+<img src="/images/chat_tags.png" alt="个人标签" width="260px" />
+
+
 ## 开发文档
 
 http://admin.appkefu.com/AppKeFu/doc/ios.html
