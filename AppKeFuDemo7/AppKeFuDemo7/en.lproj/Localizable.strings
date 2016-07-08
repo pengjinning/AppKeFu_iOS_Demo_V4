@@ -1,0 +1,125 @@
+/*
+ Localize.strings
+ AppKeFuLib
+ 
+ Created by jack on 14-6-18.
+ Copyright (c) 2014年 appkefu.com. All rights reserved.
+ */
+
+"AppKeFu"="AppKeFu";
+"Photo"="Photo";
+"Camera"="Cam";
+"FAQ"="FAQ";
+"FAQ2"="FAQ";
+"Send"="Send";
+
+"Slide Up Cancel"="Slide Up Cancel";
+"Lose Up Cancel"="Lose Up Cancel";
+"Read More"="Read More";
+"Press To Record"="Press To Record";
+"Lose To Cancel"="Lose To Cancel";
+"Are you sure to delete this message?"="Are you sure to delete this message?";
+
+"Cancel"="Cancel";
+"OK"="OK";
+"Tip"="Tip";
+"SimulatorNoVoice"="Simulator Not Support Voice";
+"Delete"="Delete";
+"RateThisAgent"="Rate This Agent";
+"PleaseRateThisAgent"="Please Rate This Agent";
+"Bad"="Bad";
+"Good"="Good";
+"JustSoSo"="JustSoSo";
+"Promotion"="Promotion";
+"AgentCloseSession"="Agent Closed Session";
+"AgentQuitSession"="Agent Quit Session";
+"There are %d agent before you, about to wait %@ seconds"="There are %d agent before you, about to wait %@ seconds";
+"There are %d agent before you, please wait"="There are %d agent before you, please wait";
+"NoAgentOnline"="No Agent Online,leave message";
+
+"Settings"="Settings";
+"OnlineStatus"="Online Status";
+"AgentName"="Agent Name";
+"PlayVoiceWhenSendMessage"="Play Voice When Send Message";
+"PlayVoiceWhenReceiveMessage"="Play Voice When Receive Message";
+"Vibrate"="Vibrate";
+"ClearMessages"="Clear Message Records";
+"AreYouSureToClearMessages"="Are you sure to clear message Record ?";
+"Online"="Online";
+"Offline"="Offline";
+
+"faqTitle"="FAQ";
+"contacting"="Contacting";
+"contacting %@"="Contacting %@";
+"ContinueWait"="ContinueWait";
+"OutOfTime"="OutOfTime";
+"CloseSessionAsure"="CloseSessionAsure";
+"RequestSuccess"="Request Success";
+"LeaveMessage"="Leave Message";
+"AreYouSureToCall?"="AreYouSureToCall?";
+
+"NoRecordDevice"="No Record Device Found";
+"AllowUsingMicrophone"="Settings->Privacy->Microphone";
+"Yestoday %@"="Yestoday %@";
+"DayBeforeYestoday %@"="The day before yestory %@";
+
+"RecordingTooShort"="Too Short!";
+"RecordingTooLong"="Too Long!";
+
+"Done" = "Done";
+"Open in Chrome" = "Open in Chrome";
+"Open in Safari" = "Open in Safari";
+"Copy URL" = "Copy URL";
+"Close" = "Close";
+"Leave" = "Leave";
+"Rate"="Rate";
+"ThxForRate"="ThxForRate";
+
+"SendLink" = "SendLink";
+"NetworkLost" = "NetWork Not Reachable";
+
+"robotNotFound" = "Sorry, We have not found answer for you:";
+"robotViewFAQ" = "View FAQ";
+"robotCallAgent" = "Call HumanAgent";
+"RobotNoImage" = "Image Not Allowed To Robot";
+"RobotNoVoice" = "Voice Not Allowed To Robot";
+"robotNotSet" = "Robot not set";
+
+"tip" = "Say Something";
+"RateTitle" = "Please Rate";
+"Submit" = "Submit";
+"Cancel" = "Cancel";
+"alreadRated" = "Already Rated";
+"foundedAnswers" = "Founded Answers:";
+
+
+"mobileNum:" = "Mobile Num:";
+"mobileNum" = "Mobile Num";
+"mustFill" = "Must Fill";
+"lvmsgContent:" = "Msg Content:";
+"lvmsgContent" = "Msg Content";
+"replyType:" = "Reply Type:";
+"smsReply" = "Sms Reply";
+"telReply" = "Tel Reply";
+"noReply" = "No Reply";
+"submit" = "Submit";
+"mobileNumWrong" = "Mobile Num Wrong";
+"lvmsgContentNotNull" = "Msg Content should not be null";
+"lvmsgSuccess" = "Leave Msg Success";
+
+"agentNickname" = "nickname";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

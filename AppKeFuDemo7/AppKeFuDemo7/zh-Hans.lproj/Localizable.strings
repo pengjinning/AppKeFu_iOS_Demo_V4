@@ -1,0 +1,129 @@
+/*
+ Localize.strings
+ AppKeFuLib
+ 
+ Created by jack on 14-6-18.
+ Copyright (c) 2014年 appkefu.com. All rights reserved.
+ */
+
+"AppKeFu"="微客服";
+"Photo"="照片";
+"Camera"="拍照";
+"FAQ"="FAQ";
+"FAQ2"="常见问题";
+"Send"="发送";
+
+"Slide Up Cancel"="手指上划,取消发送";
+"Lose Up Cancel"="松开手指,取消发送";
+"Read More"="阅读详情";
+"Press To Record"="按住 说话";
+"Lose To Cancel"="松开 取消";
+"Are you sure to delete this message?"="是否删除该条消息";
+
+
+"Cancel"="取消";
+"OK"="确定";
+"Tip"="提示";
+"SimulatorNoVoice"="模拟器不支持语音";
+"Delete"="删除";
+"RateThisAgent"="评价客服";
+"PleaseRateThisAgent"="请对客服的服务进行评价";
+"Bad"="很差";
+"Good"="非常满意";
+"JustSoSo"="满意";
+"Promotion"="提示";
+"AgentCloseSession"="客服关闭会话";
+"AgentQuitSession"="客服退出会话";
+"There are %d agent before you, about to wait %@ seconds"="您前面还有%d位访客,约需要等待%@秒";
+"There are %d agent before you, please wait"="您前面还有%d位访客,请您耐心等待";
+"NoAgentOnline"="无客服在线,请留言";
+
+"Settings"="设置";
+"OnlineStatus"="在线状态";
+"AgentName"="客服名";
+"PlayVoiceWhenSendMessage"="发送消息时播放提示音";
+"PlayVoiceWhenReceiveMessage"="接收到消息播放提示音";
+"Vibrate"="消息振动";
+"ClearMessages"="清空聊天记录";
+"AreYouSureToClearMessages"="确定要清空消息记录?";
+"Online"="在线";
+"Offline"="离线";
+
+"faqTitle"="常见问题";
+"contacting"="联系客服中";
+"contacting %@"="联系客服中 %@";
+"ContinueWait"="继续等待";
+"OutOfTime"="连接超时";
+"CloseSessionAsure"="确定要关闭会话?";
+"RequestSuccess"="成功连接客服";
+"LeaveMessage"="留言";
+"AreYouSureToCall?"="确定要拨打电话?";
+
+"NoRecordDevice"="无录音设备";
+"AllowUsingMicrophone"="请到:设置->隐私->麦克风 开启麦克风";
+"Yestoday %@"="昨天 %@";
+"DayBeforeYestoday %@"="前天 %@";
+
+"RecordingTooShort"="录音太短!";
+"RecordingTooLong"="录音太长!";
+
+"Done" = "完成";
+"Open in Chrome" = "用 Chrome 打开";
+"Open in Safari" = "用 Safari 打开";
+"Copy URL" = "复制链接";
+"Close" = "结束会话";
+"Leave" = "暂时离开";
+"Rate"="评价";
+"ThxForRate"="多谢评价!";
+
+"SendLink" = "发送链接";
+"NetworkLost" = "当前无网络,请稍后重试";
+
+"robotNotFound" = "很抱歉,客服小秘书未能理解您的问题,请选择以下操作:";
+"robotViewFAQ" = "查看常见问题";
+"robotCallAgent" = "呼叫人工客服";
+"RobotNoImage" = "不能向机器人发送图片";
+"RobotNoVoice" = "不能向机器人发送语音";
+"robotNotSet" = "暂未设置智能机器人应答";
+
+"tip" = "附言";
+"RateTitle" = "请对我们的服务做出评价";
+"Submit" = "提交";
+"Cancel" = "取消";
+"alreadRated" = "已经评价过,不能重复评价";
+"foundedAnswers" = "为您找到以下相关问题:";
+
+"mobileNum:" = "手机号:";
+"mobileNum" = "手机号";
+"mustFill" = "必填";
+"lvmsgContent:" = "留言内容:";
+"lvmsgContent" = "留言内容";
+"replyType:" = "回复类型:";
+"smsReply" = "短信回复";
+"telReply" = "电话回复";
+"noReply" = "不回复";
+"submit" = "提交";
+"mobileNumWrong" = "手机号码错误";
+"lvmsgContentNotNull" = "留言内容不能为空";
+"lvmsgSuccess" = "留言成功";
+
+"agentNickname" = "小薇";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
