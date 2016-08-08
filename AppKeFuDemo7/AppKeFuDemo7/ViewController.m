@@ -42,10 +42,10 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    self.title = @"微客服3";
+    self.title = @"微客服4";
     
-    onlineStatus = NSLocalizedString(@"1.在线咨询售前", nil);
-    onlineStatus2 = NSLocalizedString(@"2.在线咨询售后", nil);
+    onlineStatus = NSLocalizedString(@"1.在线咨询演示1", nil);
+    onlineStatus2 = NSLocalizedString(@"2.在线咨询演示2", nil);
     
 }
 
@@ -167,7 +167,6 @@
                                (unsigned long)[[AppKeFuLib sharedInstance] getUnreadMessageCount:@"wgdemo"]];
     }
     
-    
     return cell;
 }
 
@@ -277,7 +276,7 @@
          
          //下面5个参数专为显示商品信息设置，具体含义可以参考AppKeFuLib.h文件里面对接口的介绍
                                         shouldShowGoodsInfo:TRUE
-                                      withGoodsImageViewURL:@"http://appkefu.com/AppKeFu/images/dingyue.jpg"
+                                      withGoodsImageViewURL:@"http://admin.appkefu.com/AppKeFu/images/dingyue.jpg"
                                        withGoodsTitleDetail:@"商品信息商品简介商品简介商品信息商品简介商品简介商品信息商品简介商品简介"
                                              withGoodsPrice:@"￥200000.00"
                                                withGoodsURL:@"http://appkefu.com"
@@ -389,7 +388,7 @@
     if ([isConnected boolValue])
     {
         //登录成功
-        self.title = @"微客服3(登录成功)";
+        self.title = @"微客服4(登录成功)";
         
         //
         //查询工作组在线状态，需要将wgdemo替换为开发者自己的 “工作组名称”，请在官方管理后台申请，地址：http://appkefu.com/AppKeFu/admin
@@ -399,7 +398,7 @@
     else
     {
         //登录失败
-        self.title = @"微客服3(登录失败)";
+        self.title = @"微客服4(登录失败)";
         
     }
 }
@@ -425,12 +424,12 @@
         //客服工作组在线
         if ([status isEqualToString:@"online"])
         {
-            onlineStatus = NSLocalizedString(@"1.在线咨询售前(在线)", nil);
+            onlineStatus = NSLocalizedString(@"1.在线咨询演示1(在线)", nil);
         }
         //客服工作组离线
         else
         {
-            onlineStatus = NSLocalizedString(@"1.在线咨询售前(离线)", nil);
+            onlineStatus = NSLocalizedString(@"1.在线咨询演示2(离线)", nil);
         }
         
     }
@@ -440,12 +439,12 @@
         //客服工作组在线
         if ([status isEqualToString:@"online"])
         {
-            onlineStatus2 = NSLocalizedString(@"2.在线咨询售后(在线)", nil);
+            onlineStatus2 = NSLocalizedString(@"2.在线咨询演示2(在线)", nil);
         }
         //客服工作组离线
         else
         {
-            onlineStatus2 = NSLocalizedString(@"2.在线咨询售后(离线)", nil);
+            onlineStatus2 = NSLocalizedString(@"2.在线咨询演示2(离线)", nil);
         }
     }
     
@@ -493,7 +492,7 @@
 -(void)notifyXmppStreamDisconnectWithError:(NSNotification *)notification
 {
     //登录失败
-    self.title = @"微客服3(网络连接失败)";
+    self.title = @"微客服4(网络连接失败)";
 }
 
 

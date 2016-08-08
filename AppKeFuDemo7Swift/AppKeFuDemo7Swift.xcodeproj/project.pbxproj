@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0409DDC41D545CE30054D269 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409DDC31D545CE30054D269 /* AppDelegate.swift */; };
+		0409DDC61D545CE30054D269 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409DDC51D545CE30054D269 /* ViewController.swift */; };
+		0409DDC91D545CE30054D269 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0409DDC71D545CE30054D269 /* Main.storyboard */; };
+		0409DDCB1D545CE30054D269 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0409DDCA1D545CE30054D269 /* Assets.xcassets */; };
+		0409DDCE1D545CE30054D269 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0409DDCC1D545CE30054D269 /* LaunchScreen.storyboard */; };
+		0409DDDA1D545D360054D269 /* AppKeFuResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0409DDD71D545D360054D269 /* AppKeFuResources.bundle */; };
+		0409DDDB1D545D360054D269 /* libAppKeFuLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0409DDD81D545D360054D269 /* libAppKeFuLib.a */; };
+		0409DDE21D545DC20054D269 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0409DDE11D545DC20054D269 /* libxml2.tbd */; };
+		0409DDE41D545DCB0054D269 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0409DDE31D545DCB0054D269 /* libresolv.tbd */; };
+		0409DDE61D545DD70054D269 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0409DDE51D545DD70054D269 /* libiconv.tbd */; };
+		0409DDE81D545E4F0054D269 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0409DDE71D545E4F0054D269 /* SystemConfiguration.framework */; };
+		0409DDEA1D545E5C0054D269 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0409DDE91D545E5C0054D269 /* CoreLocation.framework */; };
+		0409DDEC1D545E710054D269 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0409DDEB1D545E710054D269 /* CoreData.framework */; };
+		0409DDEE1D545E7A0054D269 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0409DDED1D545E7A0054D269 /* AVFoundation.framework */; };
+		0409DDF01D545EE00054D269 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0409DDEF1D545EE00054D269 /* AudioToolbox.framework */; };
+		0409DDF41D546E3F0054D269 /* KFNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409DDF31D546E3F0054D269 /* KFNavigationController.swift */; };
+		0409DDF81D546E9F0054D269 /* KFTagsChangeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409DDF71D546E9F0054D269 /* KFTagsChangeTableViewController.swift */; };
+		0409DDFA1D546EDC0054D269 /* KFSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409DDF91D546EDC0054D269 /* KFSettingsViewController.swift */; };
+		0409DDFC1D546EFC0054D269 /* KFTagsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409DDFB1D546EFC0054D269 /* KFTagsTableViewController.swift */; };
+		0409DDFE1D546F150054D269 /* KFRightButtonItemCallBackTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409DDFD1D546F150054D269 /* KFRightButtonItemCallBackTableViewController.swift */; };
+		0468D69A1D58B0760067CD16 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0468D69C1D58B0760067CD16 /* Localizable.strings */; };
+		0468D6AE1D58B7AF0067CD16 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 0468D6A21D58B7AF0067CD16 /* Icon-40.png */; };
+		0468D6AF1D58B7AF0067CD16 /* Icon-58.png in Resources */ = {isa = PBXBuildFile; fileRef = 0468D6A31D58B7AF0067CD16 /* Icon-58.png */; };
+		0468D6B01D58B7AF0067CD16 /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 0468D6A41D58B7AF0067CD16 /* Icon-60.png */; };
+		0468D6B11D58B7AF0067CD16 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 0468D6A51D58B7AF0067CD16 /* Icon-72.png */; };
+		0468D6B21D58B7AF0067CD16 /* Icon-80.png in Resources */ = {isa = PBXBuildFile; fileRef = 0468D6A61D58B7AF0067CD16 /* Icon-80.png */; };
+		0468D6B31D58B7AF0067CD16 /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 0468D6A71D58B7AF0067CD16 /* Icon-120.png */; };
+		0468D6B41D58B7AF0067CD16 /* Icon-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 0468D6A81D58B7AF0067CD16 /* Icon-1024.png */; };
+		0468D6B51D58B7AF0067CD16 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 0468D6A91D58B7AF0067CD16 /* Icon-Small-50.png */; };
+		0468D6B61D58B7AF0067CD16 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 0468D6AA1D58B7AF0067CD16 /* Icon-Small.png */; };
+		0468D6B71D58B7AF0067CD16 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0468D6AB1D58B7AF0067CD16 /* Icon-Small@2x.png */; };
+		0468D6B81D58B7AF0067CD16 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0468D6AC1D58B7AF0067CD16 /* Icon.png */; };
+		0468D6B91D58B7AF0067CD16 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0468D6AD1D58B7AF0067CD16 /* Icon@2x.png */; };
+		0468D6BC1D58B7BC0067CD16 /* kefu_avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 0468D6BA1D58B7BC0067CD16 /* kefu_avatar.png */; };
+		0468D6BD1D58B7BC0067CD16 /* user_avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 0468D6BB1D58B7BC0067CD16 /* user_avatar.png */; };
+		0468D6C11D58B7CA0067CD16 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0468D6BE1D58B7CA0067CD16 /* Default-568h@2x.png */; };
+		0468D6C21D58B7CA0067CD16 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0468D6BF1D58B7CA0067CD16 /* Default.png */; };
+		0468D6C31D58B7CA0067CD16 /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 0468D6C01D58B7CA0067CD16 /* Default~iphone.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0409DDC01D545CE20054D269 /* AppKeFuDemo7Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppKeFuDemo7Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0409DDC31D545CE30054D269 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0409DDC51D545CE30054D269 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0409DDC81D545CE30054D269 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0409DDCA1D545CE30054D269 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0409DDCD1D545CE30054D269 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0409DDCF1D545CE30054D269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0409DDD61D545D360054D269 /* AppKeFuLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppKeFuLib.h; path = AppKeFuLib/AppKeFuLib.h; sourceTree = "<group>"; };
+		0409DDD71D545D360054D269 /* AppKeFuResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AppKeFuResources.bundle; path = AppKeFuLib/AppKeFuResources.bundle; sourceTree = "<group>"; };
+		0409DDD81D545D360054D269 /* libAppKeFuLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAppKeFuLib.a; path = AppKeFuLib/libAppKeFuLib.a; sourceTree = "<group>"; };
+		0409DDDD1D545D5E0054D269 /* AppKeFuDemo7Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppKeFuDemo7Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		0409DDE11D545DC20054D269 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		0409DDE31D545DCB0054D269 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		0409DDE51D545DD70054D269 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		0409DDE71D545E4F0054D269 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0409DDE91D545E5C0054D269 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0409DDEB1D545E710054D269 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0409DDED1D545E7A0054D269 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0409DDEF1D545EE00054D269 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0409DDF31D546E3F0054D269 /* KFNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KFNavigationController.swift; path = Controllers/KFNavigationController.swift; sourceTree = "<group>"; };
+		0409DDF71D546E9F0054D269 /* KFTagsChangeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KFTagsChangeTableViewController.swift; path = Controllers/KFTagsChangeTableViewController.swift; sourceTree = "<group>"; };
+		0409DDF91D546EDC0054D269 /* KFSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KFSettingsViewController.swift; path = Controllers/KFSettingsViewController.swift; sourceTree = "<group>"; };
+		0409DDFB1D546EFC0054D269 /* KFTagsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KFTagsTableViewController.swift; path = Controllers/KFTagsTableViewController.swift; sourceTree = "<group>"; };
+		0409DDFD1D546F150054D269 /* KFRightButtonItemCallBackTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KFRightButtonItemCallBackTableViewController.swift; path = Controllers/KFRightButtonItemCallBackTableViewController.swift; sourceTree = "<group>"; };
+		0468D69B1D58B0760067CD16 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		0468D69D1D58B0780067CD16 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0468D6A21D58B7AF0067CD16 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-40.png"; path = "Resources/Icon-40.png"; sourceTree = "<group>"; };
+		0468D6A31D58B7AF0067CD16 /* Icon-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-58.png"; path = "Resources/Icon-58.png"; sourceTree = "<group>"; };
+		0468D6A41D58B7AF0067CD16 /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-60.png"; path = "Resources/Icon-60.png"; sourceTree = "<group>"; };
+		0468D6A51D58B7AF0067CD16 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "Resources/Icon-72.png"; sourceTree = "<group>"; };
+		0468D6A61D58B7AF0067CD16 /* Icon-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-80.png"; path = "Resources/Icon-80.png"; sourceTree = "<group>"; };
+		0468D6A71D58B7AF0067CD16 /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-120.png"; path = "Resources/Icon-120.png"; sourceTree = "<group>"; };
+		0468D6A81D58B7AF0067CD16 /* Icon-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-1024.png"; path = "Resources/Icon-1024.png"; sourceTree = "<group>"; };
+		0468D6A91D58B7AF0067CD16 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "Resources/Icon-Small-50.png"; sourceTree = "<group>"; };
+		0468D6AA1D58B7AF0067CD16 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "Resources/Icon-Small.png"; sourceTree = "<group>"; };
+		0468D6AB1D58B7AF0067CD16 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "Resources/Icon-Small@2x.png"; sourceTree = "<group>"; };
+		0468D6AC1D58B7AF0067CD16 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Resources/Icon.png; sourceTree = "<group>"; };
+		0468D6AD1D58B7AF0067CD16 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Resources/Icon@2x.png"; sourceTree = "<group>"; };
+		0468D6BA1D58B7BC0067CD16 /* kefu_avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kefu_avatar.png; path = Resources/kefu_avatar.png; sourceTree = "<group>"; };
+		0468D6BB1D58B7BC0067CD16 /* user_avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = user_avatar.png; path = Resources/user_avatar.png; sourceTree = "<group>"; };
+		0468D6BE1D58B7CA0067CD16 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Resources/Default-568h@2x.png"; sourceTree = "<group>"; };
+		0468D6BF1D58B7CA0067CD16 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/Default.png; sourceTree = "<group>"; };
+		0468D6C01D58B7CA0067CD16 /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default~iphone.png"; path = "Resources/Default~iphone.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0409DDBD1D545CE20054D269 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0409DDF01D545EE00054D269 /* AudioToolbox.framework in Frameworks */,
+				0409DDEE1D545E7A0054D269 /* AVFoundation.framework in Frameworks */,
+				0409DDEC1D545E710054D269 /* CoreData.framework in Frameworks */,
+				0409DDEA1D545E5C0054D269 /* CoreLocation.framework in Frameworks */,
+				0409DDE81D545E4F0054D269 /* SystemConfiguration.framework in Frameworks */,
+				0409DDE61D545DD70054D269 /* libiconv.tbd in Frameworks */,
+				0409DDE41D545DCB0054D269 /* libresolv.tbd in Frameworks */,
+				0409DDE21D545DC20054D269 /* libxml2.tbd in Frameworks */,
+				0409DDDB1D545D360054D269 /* libAppKeFuLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0409DDB71D545CE20054D269 = {
+			isa = PBXGroup;
+			children = (
+				0409DDC21D545CE30054D269 /* AppKeFuDemo7Swift */,
+				0409DDF11D545EF00054D269 /* Frameworks */,
+				0409DDC11D545CE20054D269 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0409DDC11D545CE20054D269 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0409DDC01D545CE20054D269 /* AppKeFuDemo7Swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0409DDC21D545CE30054D269 /* AppKeFuDemo7Swift */ = {
+			isa = PBXGroup;
+			children = (
+				0468D69E1D58B7760067CD16 /* Resources */,
+				0409DDD51D545D290054D269 /* AppKeFuLib */,
+				0409DDF21D546E150054D269 /* Controllers */,
+				0409DDC31D545CE30054D269 /* AppDelegate.swift */,
+				0409DDC51D545CE30054D269 /* ViewController.swift */,
+				0409DDDD1D545D5E0054D269 /* AppKeFuDemo7Swift-Bridging-Header.h */,
+				0409DDC71D545CE30054D269 /* Main.storyboard */,
+				0409DDCA1D545CE30054D269 /* Assets.xcassets */,
+				0468D69C1D58B0760067CD16 /* Localizable.strings */,
+				0409DDCC1D545CE30054D269 /* LaunchScreen.storyboard */,
+				0409DDCF1D545CE30054D269 /* Info.plist */,
+			);
+			path = AppKeFuDemo7Swift;
+			sourceTree = "<group>";
+		};
+		0409DDD51D545D290054D269 /* AppKeFuLib */ = {
+			isa = PBXGroup;
+			children = (
+				0409DDD61D545D360054D269 /* AppKeFuLib.h */,
+				0409DDD71D545D360054D269 /* AppKeFuResources.bundle */,
+				0409DDD81D545D360054D269 /* libAppKeFuLib.a */,
+			);
+			name = AppKeFuLib;
+			sourceTree = "<group>";
+		};
+		0409DDF11D545EF00054D269 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0409DDEF1D545EE00054D269 /* AudioToolbox.framework */,
+				0409DDED1D545E7A0054D269 /* AVFoundation.framework */,
+				0409DDEB1D545E710054D269 /* CoreData.framework */,
+				0409DDE91D545E5C0054D269 /* CoreLocation.framework */,
+				0409DDE71D545E4F0054D269 /* SystemConfiguration.framework */,
+				0409DDE51D545DD70054D269 /* libiconv.tbd */,
+				0409DDE31D545DCB0054D269 /* libresolv.tbd */,
+				0409DDE11D545DC20054D269 /* libxml2.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0409DDF21D546E150054D269 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0409DDFB1D546EFC0054D269 /* KFTagsTableViewController.swift */,
+				0409DDF31D546E3F0054D269 /* KFNavigationController.swift */,
+				0409DDF71D546E9F0054D269 /* KFTagsChangeTableViewController.swift */,
+				0409DDF91D546EDC0054D269 /* KFSettingsViewController.swift */,
+				0409DDFD1D546F150054D269 /* KFRightButtonItemCallBackTableViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		0468D69E1D58B7760067CD16 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0468D69F1D58B7800067CD16 /* Others */,
+				0468D6A01D58B7890067CD16 /* Appicons */,
+				0468D6A11D58B7930067CD16 /* Lanchimages */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0468D69F1D58B7800067CD16 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				0468D6BA1D58B7BC0067CD16 /* kefu_avatar.png */,
+				0468D6BB1D58B7BC0067CD16 /* user_avatar.png */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		0468D6A01D58B7890067CD16 /* Appicons */ = {
+			isa = PBXGroup;
+			children = (
+				0468D6A21D58B7AF0067CD16 /* Icon-40.png */,
+				0468D6A31D58B7AF0067CD16 /* Icon-58.png */,
+				0468D6A41D58B7AF0067CD16 /* Icon-60.png */,
+				0468D6A51D58B7AF0067CD16 /* Icon-72.png */,
+				0468D6A61D58B7AF0067CD16 /* Icon-80.png */,
+				0468D6A71D58B7AF0067CD16 /* Icon-120.png */,
+				0468D6A81D58B7AF0067CD16 /* Icon-1024.png */,
+				0468D6A91D58B7AF0067CD16 /* Icon-Small-50.png */,
+				0468D6AA1D58B7AF0067CD16 /* Icon-Small.png */,
+				0468D6AB1D58B7AF0067CD16 /* Icon-Small@2x.png */,
+				0468D6AC1D58B7AF0067CD16 /* Icon.png */,
+				0468D6AD1D58B7AF0067CD16 /* Icon@2x.png */,
+			);
+			name = Appicons;
+			sourceTree = "<group>";
+		};
+		0468D6A11D58B7930067CD16 /* Lanchimages */ = {
+			isa = PBXGroup;
+			children = (
+				0468D6BE1D58B7CA0067CD16 /* Default-568h@2x.png */,
+				0468D6BF1D58B7CA0067CD16 /* Default.png */,
+				0468D6C01D58B7CA0067CD16 /* Default~iphone.png */,
+			);
+			name = Lanchimages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0409DDBF1D545CE20054D269 /* AppKeFuDemo7Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0409DDD21D545CE30054D269 /* Build configuration list for PBXNativeTarget "AppKeFuDemo7Swift" */;
+			buildPhases = (
+				0409DDBC1D545CE20054D269 /* Sources */,
+				0409DDBD1D545CE20054D269 /* Frameworks */,
+				0409DDBE1D545CE20054D269 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppKeFuDemo7Swift;
+			productName = AppKeFuDemo7Swift;
+			productReference = 0409DDC01D545CE20054D269 /* AppKeFuDemo7Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0409DDB81D545CE20054D269 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = appkefu.com;
+				TargetAttributes = {
+					0409DDBF1D545CE20054D269 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = L5F47963M2;
+					};
+				};
+			};
+			buildConfigurationList = 0409DDBB1D545CE20054D269 /* Build configuration list for PBXProject "AppKeFuDemo7Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0409DDB71D545CE20054D269;
+			productRefGroup = 0409DDC11D545CE20054D269 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0409DDBF1D545CE20054D269 /* AppKeFuDemo7Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0409DDBE1D545CE20054D269 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0468D6AF1D58B7AF0067CD16 /* Icon-58.png in Resources */,
+				0468D6B31D58B7AF0067CD16 /* Icon-120.png in Resources */,
+				0468D69A1D58B0760067CD16 /* Localizable.strings in Resources */,
+				0468D6BD1D58B7BC0067CD16 /* user_avatar.png in Resources */,
+				0468D6C21D58B7CA0067CD16 /* Default.png in Resources */,
+				0468D6B71D58B7AF0067CD16 /* Icon-Small@2x.png in Resources */,
+				0468D6B81D58B7AF0067CD16 /* Icon.png in Resources */,
+				0468D6B11D58B7AF0067CD16 /* Icon-72.png in Resources */,
+				0468D6B01D58B7AF0067CD16 /* Icon-60.png in Resources */,
+				0468D6B41D58B7AF0067CD16 /* Icon-1024.png in Resources */,
+				0409DDCE1D545CE30054D269 /* LaunchScreen.storyboard in Resources */,
+				0468D6BC1D58B7BC0067CD16 /* kefu_avatar.png in Resources */,
+				0468D6AE1D58B7AF0067CD16 /* Icon-40.png in Resources */,
+				0468D6C31D58B7CA0067CD16 /* Default~iphone.png in Resources */,
+				0468D6B61D58B7AF0067CD16 /* Icon-Small.png in Resources */,
+				0468D6C11D58B7CA0067CD16 /* Default-568h@2x.png in Resources */,
+				0468D6B51D58B7AF0067CD16 /* Icon-Small-50.png in Resources */,
+				0468D6B21D58B7AF0067CD16 /* Icon-80.png in Resources */,
+				0468D6B91D58B7AF0067CD16 /* Icon@2x.png in Resources */,
+				0409DDCB1D545CE30054D269 /* Assets.xcassets in Resources */,
+				0409DDDA1D545D360054D269 /* AppKeFuResources.bundle in Resources */,
+				0409DDC91D545CE30054D269 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0409DDBC1D545CE20054D269 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0409DDF41D546E3F0054D269 /* KFNavigationController.swift in Sources */,
+				0409DDFA1D546EDC0054D269 /* KFSettingsViewController.swift in Sources */,
+				0409DDFE1D546F150054D269 /* KFRightButtonItemCallBackTableViewController.swift in Sources */,
+				0409DDC61D545CE30054D269 /* ViewController.swift in Sources */,
+				0409DDFC1D546EFC0054D269 /* KFTagsTableViewController.swift in Sources */,
+				0409DDF81D546E9F0054D269 /* KFTagsChangeTableViewController.swift in Sources */,
+				0409DDC41D545CE30054D269 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0409DDC71D545CE30054D269 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0409DDC81D545CE30054D269 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0409DDCC1D545CE30054D269 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0409DDCD1D545CE30054D269 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0468D69C1D58B0760067CD16 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0468D69B1D58B0760067CD16 /* zh-Hans */,
+				0468D69D1D58B0780067CD16 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0409DDD01D545CE30054D269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0409DDD11D545CE30054D269 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0409DDD31D545CE30054D269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = AppKeFuDemo7Swift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppKeFuDemo7Swift/AppKeFuLib",
+				);
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"$(SRCROOT)/AppKeFuDemo7Swift/AppKeFuLib/libAppKeFuLib.a",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appkefu.AppKeFuDemo7Swift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppKeFuDemo7Swift/AppKeFuDemo7Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0409DDD41D545CE30054D269 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = AppKeFuDemo7Swift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppKeFuDemo7Swift/AppKeFuLib",
+				);
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"$(SRCROOT)/AppKeFuDemo7Swift/AppKeFuLib/libAppKeFuLib.a",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appkefu.AppKeFuDemo7Swift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppKeFuDemo7Swift/AppKeFuDemo7Swift-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0409DDBB1D545CE20054D269 /* Build configuration list for PBXProject "AppKeFuDemo7Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0409DDD01D545CE30054D269 /* Debug */,
+				0409DDD11D545CE30054D269 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0409DDD21D545CE30054D269 /* Build configuration list for PBXNativeTarget "AppKeFuDemo7Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0409DDD31D545CE30054D269 /* Debug */,
+				0409DDD41D545CE30054D269 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0409DDB81D545CE20054D269 /* Project object */;
+}

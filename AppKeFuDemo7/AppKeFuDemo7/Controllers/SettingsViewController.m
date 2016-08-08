@@ -63,7 +63,6 @@
             
             UISwitch *sendMsgRingSwitch = [[UISwitch alloc] init];
             
-            
             [sendMsgRingSwitch addTarget:self action:@selector(switchSendMsgRing:) forControlEvents:UIControlEventValueChanged];
             
             BOOL flag = [[AppKeFuLib sharedInstance] shouldRingWhenSendMessage];
