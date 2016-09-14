@@ -27,6 +27,7 @@ class KFTagsTableViewController: UITableViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
+        self.tableView.reloadData();
     }
     
     override func viewWillDisappear(animated: Bool) {
@@ -40,52 +41,58 @@ class KFTagsTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3;
+        return 7;
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cellIdentifier = "Cell"
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath)
+        //tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
+        //var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath)
+        var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier);
+        if(cell == nil){
+            cell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: cellIdentifier);
+        }
+        cell!.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator;
+        
         
         if (indexPath.row == 0)
         {
-            cell.textLabel?.text = "1.用户昵称"
-            cell.detailTextLabel?.text = AppKeFuLib.sharedInstance().getTagNickname()
+            cell!.textLabel?.text = "1.用户昵称"
+            cell!.detailTextLabel?.text = AppKeFuLib.sharedInstance().getTagNickname() != nil ? AppKeFuLib.sharedInstance().getTagNickname() : "1";
         }
         else if (indexPath.row == 1)
         {
-            cell.textLabel?.text = "2.性别";
-            cell.detailTextLabel?.text = AppKeFuLib.sharedInstance().getTagSex()
+            cell!.textLabel?.text = "2.性别";
+            cell!.detailTextLabel?.text = AppKeFuLib.sharedInstance().getTagSex() != nil ? AppKeFuLib.sharedInstance().getTagSex(): "2"
         }
         else if (indexPath.row == 2)
         {
-            cell.textLabel?.text = "3.语言";
-            cell.detailTextLabel?.text = AppKeFuLib.sharedInstance().getTagLanguage()
+            cell!.textLabel?.text = "3.语言";
+            cell!.detailTextLabel?.text = AppKeFuLib.sharedInstance().getTagLanguage() != nil ? AppKeFuLib.sharedInstance().getTagLanguage(): "3"
         }
         else if (indexPath.row == 3)
         {
-            cell.textLabel?.text = "4.城市";
-            cell.detailTextLabel?.text = AppKeFuLib.sharedInstance().getTagCity()
+            cell!.textLabel?.text = "4.城市";
+            cell!.detailTextLabel?.text = AppKeFuLib.sharedInstance().getTagCity() != nil ? AppKeFuLib.sharedInstance().getTagCity() : "4"
         }
         else if (indexPath.row == 4)
         {
-            cell.textLabel?.text = "5.省份";
-            cell.detailTextLabel?.text = AppKeFuLib.sharedInstance().getTagProvince()
+            cell!.textLabel?.text = "5.省份";
+            cell!.detailTextLabel?.text = AppKeFuLib.sharedInstance().getTagProvince() != nil ? AppKeFuLib.sharedInstance().getTagProvince() : "5"
         }
         else if (indexPath.row == 5)
         {
-            cell.textLabel?.text = "6.国家";
-            cell.detailTextLabel?.text = AppKeFuLib.sharedInstance().getTagCountry()
+            cell!.textLabel?.text = "6.国家";
+            cell!.detailTextLabel?.text = AppKeFuLib.sharedInstance().getTagCountry() != nil ? AppKeFuLib.sharedInstance().getTagCountry() : "6"
         }
         else if (indexPath.row == 6)
         {
-            cell.textLabel?.text = "7.其他";
-            cell.detailTextLabel?.text = AppKeFuLib.sharedInstance().getTagOther()
+            cell!.textLabel?.text = "7.其他";
+            cell!.detailTextLabel?.text = AppKeFuLib.sharedInstance().getTagOther() != nil ? AppKeFuLib.sharedInstance().getTagOther() : "7"
         }
         
-        return cell
+        return cell!
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -123,14 +130,12 @@ class KFTagsTableViewController: UITableViewController {
             tagsChangeVC.tag = "OTHER";
         }
         
-        tagsChangeVC.value = cell.detailTextLabel!.text!;
+        tagsChangeVC.value = cell.detailTextLabel?.text;
         self.navigationController?.pushViewController(tagsChangeVC, animated: true)
     }
     
 }
 
-
-//http://kefu.gdws.nsenz.com/AppKeFu/weixin/chat.php?wg=gdsgszzkf&robot=false&usertype=03&username=od1Vct-et4hOC4xnSK9RA-pxonok_zshbindid&no=no#66
 
 
 

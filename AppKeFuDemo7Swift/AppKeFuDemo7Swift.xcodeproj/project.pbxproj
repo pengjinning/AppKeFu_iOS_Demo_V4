@@ -133,8 +133,8 @@
 		0409DDC21D545CE30054D269 /* AppKeFuDemo7Swift */ = {
 			isa = PBXGroup;
 			children = (
-				0468D69E1D58B7760067CD16 /* Resources */,
 				0409DDD51D545D290054D269 /* AppKeFuLib */,
+				0468D69E1D58B7760067CD16 /* Resources */,
 				0409DDF21D546E150054D269 /* Controllers */,
 				0409DDC31D545CE30054D269 /* AppDelegate.swift */,
 				0409DDC51D545CE30054D269 /* ViewController.swift */,

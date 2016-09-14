@@ -26,6 +26,7 @@ class KFRightButtonItemCallBackTableViewController: UIViewController {
         super.viewDidLoad()
         
         self.title = "回调示例页面"
+        self.view.backgroundColor = UIColor.whiteColor();
     }
     
 }

@@ -18,8 +18,8 @@ class ViewController: UITableViewController, UIAlertViewDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         self.title = "微客服4"
         
-        self.onlineStatus1 = "1.在线咨询演示1"
-        self.onlineStatus2 = "2.在线咨询演示2"
+        self.onlineStatus1 = "1.push在线咨询演示1"
+        self.onlineStatus2 = "2.present在线咨询演示2"
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -58,7 +58,7 @@ class ViewController: UITableViewController, UIAlertViewDelegate {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 13;
+        return 11;
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -105,19 +105,11 @@ class ViewController: UITableViewController, UIAlertViewDelegate {
         }
         else if (indexPath.row == 9)
         {
-            cell.textLabel?.text = "10.客服中心push(beta)";
+            cell.textLabel?.text = NSString.init(format: "10.缓存大小：%@", AppKeFuLib.sharedInstance().getCacheFileSize()) as String;
         }
         else if (indexPath.row == 10)
         {
-            cell.textLabel?.text = "11.客服中心present(beta)";
-        }
-        else if (indexPath.row == 11)
-        {
-            cell.textLabel?.text = NSString.init(format: "12.缓存大小：%@", AppKeFuLib.sharedInstance().getCacheFileSize()) as String;
-        }
-        else if (indexPath.row == 12)
-        {
-            cell.textLabel?.text = NSString.init(format: "13.未读消息数目: %lu", AppKeFuLib.sharedInstance().getUnreadMessageCount("wgdemo")) as String;
+            cell.textLabel?.text = NSString.init(format: "11.未读消息数目: %lu", AppKeFuLib.sharedInstance().getUnreadMessageCount("wgdemo")) as String;
         }
         
         
@@ -306,14 +298,6 @@ class ViewController: UITableViewController, UIAlertViewDelegate {
         }
         else if (indexPath.row == 9)
         {
-            AppKeFuLib.sharedInstance().pushKFCenterViewController(self.navigationController, withWorkgroupName: "wgdemo", hidesBottomBarWhenPushed: true)
-        }
-        else if (indexPath.row == 10)
-        {
-            AppKeFuLib.sharedInstance().presentKFCenterViewController(self.navigationController, withWorkgroupName: "wgdemo", hidesBottomBarWhenPushed: true)
-        }
-        else if (indexPath.row == 11)
-        {
             AppKeFuLib.sharedInstance().clearAllFileCache()
         }
         
@@ -349,19 +333,19 @@ class ViewController: UITableViewController, UIAlertViewDelegate {
         if workgroupname!.isEqualToString("wgdemo") {
             
             if status!.isEqualToString("online") {
-                onlineStatus1 = "1.在线咨询演示1(在线)"
+                onlineStatus1 = "1.push在线咨询演示1(在线)"
             }
             else {
-                onlineStatus1 = "1.在线咨询演示1(离线)"
+                onlineStatus1 = "1.push在线咨询演示1(离线)"
             }
         }
         else if workgroupname!.isEqualToString("wgdemo2") {
         
             if status!.isEqualToString("online") {
-                onlineStatus2 = "2.在线咨询演示2(在线)"
+                onlineStatus2 = "2.present在线咨询演示2(在线)"
             }
             else {
-                onlineStatus2 = "2.在线咨询演示2(离线)"
+                onlineStatus2 = "2.present在线咨询演示2(离线)"
             }
         }
         
@@ -419,7 +403,7 @@ class ViewController: UITableViewController, UIAlertViewDelegate {
 
     /**/
     func leftBarButtonItemTouchUpInside(sender: UIButton) -> Void {
-        NSLog("left")
+        NSLog("leftBarButtonItemTouchUpInside")
     }
     
     /**/

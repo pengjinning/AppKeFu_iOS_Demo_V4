@@ -44,8 +44,8 @@
     
     self.title = @"微客服4";
     
-    onlineStatus = NSLocalizedString(@"1.在线咨询演示1", nil);
-    onlineStatus2 = NSLocalizedString(@"2.在线咨询演示2", nil);
+    onlineStatus = NSLocalizedString(@"1.push在线咨询演示1", nil);
+    onlineStatus2 = NSLocalizedString(@"2.present在线咨询演示2", nil);
     
 }
 
@@ -99,7 +99,7 @@
 {
     //#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 13;
+    return 11;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -151,19 +151,11 @@
     }
     else if (indexPath.row == 9)
     {
-        cell.textLabel.text = @"10.客服中心push(beta)";
+        cell.textLabel.text = [NSString stringWithFormat:@"10.缓存大小：%@", [[AppKeFuLib sharedInstance] getCacheFileSize]];
     }
     else if (indexPath.row == 10)
     {
-        cell.textLabel.text = @"11.客服中心present(beta)";
-    }
-    else if (indexPath.row == 11)
-    {
-        cell.textLabel.text = [NSString stringWithFormat:@"12.缓存大小：%@", [[AppKeFuLib sharedInstance] getCacheFileSize]];
-    }
-    else if (indexPath.row == 12)
-    {
-        cell.textLabel.text = [NSString stringWithFormat:@"13.未读消息数目: %lu",
+        cell.textLabel.text = [NSString stringWithFormat:@"11.未读消息数目: %lu",
                                (unsigned long)[[AppKeFuLib sharedInstance] getUnreadMessageCount:@"wgdemo"]];
     }
     
@@ -360,18 +352,6 @@
     }
     else if (indexPath.row == 9)
     {
-        [[AppKeFuLib sharedInstance] pushKFCenterViewController:self.navigationController
-                                              withWorkgroupName:@"wgdemo"
-                                       hidesBottomBarWhenPushed:YES];
-    }
-    else if (indexPath.row == 10)
-    {
-        [[AppKeFuLib sharedInstance] presentKFCenterViewController:self.navigationController
-                                                 withWorkgroupName:@"wgdemo"
-                                          hidesBottomBarWhenPushed:YES];
-    }
-    else if (indexPath.row == 11)
-    {
         NSLog(@"清空缓存文件");
         [[AppKeFuLib sharedInstance] clearAllFileCache];
     }
@@ -389,9 +369,8 @@
     {
         //登录成功
         self.title = @"微客服4(登录成功)";
-        
         //
-        //查询工作组在线状态，需要将wgdemo替换为开发者自己的 “工作组名称”，请在官方管理后台申请，地址：http://appkefu.com/AppKeFu/admin
+        //查询工作组在线状态，需要将wgdemo替换为开发者自己的 “工作组名称”，请在官方管理后台申请，地址：http://admin.appkefu.com/AppKeFu/admin
         [[AppKeFuLib sharedInstance] queryWorkgroupOnlineStatus:@"wgdemo"];
         [[AppKeFuLib sharedInstance] queryWorkgroupOnlineStatus:@"wgdemo2"];
     }
@@ -424,12 +403,12 @@
         //客服工作组在线
         if ([status isEqualToString:@"online"])
         {
-            onlineStatus = NSLocalizedString(@"1.在线咨询演示1(在线)", nil);
+            onlineStatus = NSLocalizedString(@"1.push在线咨询演示1(在线)", nil);
         }
         //客服工作组离线
         else
         {
-            onlineStatus = NSLocalizedString(@"1.在线咨询演示2(离线)", nil);
+            onlineStatus = NSLocalizedString(@"1.push在线咨询演示1(离线)", nil);
         }
         
     }
@@ -439,12 +418,12 @@
         //客服工作组在线
         if ([status isEqualToString:@"online"])
         {
-            onlineStatus2 = NSLocalizedString(@"2.在线咨询演示2(在线)", nil);
+            onlineStatus2 = NSLocalizedString(@"2.present在线咨询演示2(在线)", nil);
         }
         //客服工作组离线
         else
         {
-            onlineStatus2 = NSLocalizedString(@"2.在线咨询演示2(离线)", nil);
+            onlineStatus2 = NSLocalizedString(@"2.present在线咨询演示2(离线)", nil);
         }
     }
     

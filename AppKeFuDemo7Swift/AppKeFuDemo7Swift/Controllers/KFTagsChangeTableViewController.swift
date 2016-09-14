@@ -11,7 +11,7 @@ import Foundation
 class KFTagsChangeTableViewController: UITableViewController, UITextFieldDelegate {
     
     
-    var tag: NSString = "", value: String = ""
+    var tag: NSString? = "", value: String? = ""
     var tagChangeField: UITextField = UITextField.init();
     
     override init(style: UITableViewStyle) {
@@ -70,7 +70,7 @@ class KFTagsChangeTableViewController: UITableViewController, UITextFieldDelegat
         tagChangeField.returnKeyType = UIReturnKeyType.Send;
         tagChangeField.becomeFirstResponder();
         tagChangeField.delegate = self;
-        tagChangeField.text = value as String;
+        tagChangeField.text = value! as String;
         
         cell.contentView.addSubview(tagChangeField)
         
@@ -81,31 +81,31 @@ class KFTagsChangeTableViewController: UITableViewController, UITextFieldDelegat
      */
     func tagChange() -> Void {
         
-        if (tag.isEqualToString("NICKNAME"))
+        if (tag!.isEqualToString("NICKNAME"))
         {
             AppKeFuLib.sharedInstance().setTagNickname(tagChangeField.text)
         }
-        else if (tag.isEqualToString("SEX"))
+        else if (tag!.isEqualToString("SEX"))
         {
             AppKeFuLib.sharedInstance().setTagSex(tagChangeField.text)
         }
-        else if (tag.isEqualToString("LANGUAGE"))
+        else if (tag!.isEqualToString("LANGUAGE"))
         {
             AppKeFuLib.sharedInstance().setTagLanguage(tagChangeField.text)
         }
-        else if (tag.isEqualToString("CITY"))
+        else if (tag!.isEqualToString("CITY"))
         {
             AppKeFuLib.sharedInstance().setTagCity(tagChangeField.text)
         }
-        else if (tag.isEqualToString("PROVINCE"))
+        else if (tag!.isEqualToString("PROVINCE"))
         {
             AppKeFuLib.sharedInstance().setTagProvince(tagChangeField.text)
         }
-        else if (tag.isEqualToString("COUNTRY"))
+        else if (tag!.isEqualToString("COUNTRY"))
         {
             AppKeFuLib.sharedInstance().setTagCountry(tagChangeField.text)
         }
-        else if (tag.isEqualToString("OTHER"))
+        else if (tag!.isEqualToString("OTHER"))
         {
             AppKeFuLib.sharedInstance().setTagOther(tagChangeField.text)
         }
@@ -118,7 +118,9 @@ class KFTagsChangeTableViewController: UITableViewController, UITextFieldDelegat
      */
     func textFieldShouldReturn(textFiled: UITextField) -> Bool {
         
-        if(tagChangeField.text?.lengthOfBytesUsingEncoding(NSStringEncoding.init()) <= 0)
+//        NSLog(textFiled.text!);
+        
+        if(textFiled.text!.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) <= 0)
         {
             let alert: UIAlertView = UIAlertView.init(title: "提示", message: "内容不能为空", delegate: nil, cancelButtonTitle: "确定")
             alert.show()
