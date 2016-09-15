@@ -237,6 +237,7 @@ faqButtonTouchUpInsideCallback:(void (^)())faqButtonTouchUpInsideCallback;      
 
 ## 更新日志
 
+#### 2016-09-14: version 4.1.5* 优化用户体验* 支持接收播放PC客服端语音
 
 
 
