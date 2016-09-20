@@ -242,7 +242,8 @@ faqButtonTouchUpInsideCallback:(void (^)())faqButtonTouchUpInsideCallback;      
 * 支持接收播放PC客服端语音
 
 #### 2016-09-14: version 4.1.6
-* 兼容iOS 10 && swift 3.0
+* 兼容 Xcode 8
+* 兼容 iOS 10 && swift 3.0
 
 
 
