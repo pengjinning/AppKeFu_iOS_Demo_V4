@@ -34,40 +34,40 @@ class KFTagsChangeTableViewController: UITableViewController, UITextFieldDelegat
         
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         tagChangeField.becomeFirstResponder()
     }
     
-    override func viewWillDisappear(animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
     }
     
     // MARK: - Table View
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1;
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "Cell"
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath)
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
         
-        tagChangeField.frame = CGRectMake(10, 7, UIScreen.mainScreen().bounds.size.width - 30, 30)
+        tagChangeField.frame = CGRect(x: 10, y: 7, width: UIScreen.main.bounds.size.width - 30, height: 30)
         tagChangeField.placeholder = "请输入内容";
         
-        tagChangeField.borderStyle = UITextBorderStyle.None;
-        tagChangeField.clearButtonMode = UITextFieldViewMode.Always;
-        tagChangeField.autocapitalizationType = UITextAutocapitalizationType.None;
+        tagChangeField.borderStyle = UITextBorderStyle.none;
+        tagChangeField.clearButtonMode = UITextFieldViewMode.always;
+        tagChangeField.autocapitalizationType = UITextAutocapitalizationType.none;
         
-        tagChangeField.contentVerticalAlignment = UIControlContentVerticalAlignment.Center;
-        tagChangeField.returnKeyType = UIReturnKeyType.Send;
+        tagChangeField.contentVerticalAlignment = UIControlContentVerticalAlignment.center;
+        tagChangeField.returnKeyType = UIReturnKeyType.send;
         tagChangeField.becomeFirstResponder();
         tagChangeField.delegate = self;
         tagChangeField.text = value! as String;
@@ -81,46 +81,46 @@ class KFTagsChangeTableViewController: UITableViewController, UITextFieldDelegat
      */
     func tagChange() -> Void {
         
-        if (tag!.isEqualToString("NICKNAME"))
+        if (tag!.isEqual(to: "NICKNAME"))
         {
             AppKeFuLib.sharedInstance().setTagNickname(tagChangeField.text)
         }
-        else if (tag!.isEqualToString("SEX"))
+        else if (tag!.isEqual(to: "SEX"))
         {
             AppKeFuLib.sharedInstance().setTagSex(tagChangeField.text)
         }
-        else if (tag!.isEqualToString("LANGUAGE"))
+        else if (tag!.isEqual(to: "LANGUAGE"))
         {
             AppKeFuLib.sharedInstance().setTagLanguage(tagChangeField.text)
         }
-        else if (tag!.isEqualToString("CITY"))
+        else if (tag!.isEqual(to: "CITY"))
         {
             AppKeFuLib.sharedInstance().setTagCity(tagChangeField.text)
         }
-        else if (tag!.isEqualToString("PROVINCE"))
+        else if (tag!.isEqual(to: "PROVINCE"))
         {
             AppKeFuLib.sharedInstance().setTagProvince(tagChangeField.text)
         }
-        else if (tag!.isEqualToString("COUNTRY"))
+        else if (tag!.isEqual(to: "COUNTRY"))
         {
             AppKeFuLib.sharedInstance().setTagCountry(tagChangeField.text)
         }
-        else if (tag!.isEqualToString("OTHER"))
+        else if (tag!.isEqual(to: "OTHER"))
         {
             AppKeFuLib.sharedInstance().setTagOther(tagChangeField.text)
         }
         
         tagChangeField.text = "";
-        self.navigationController?.popViewControllerAnimated(true)
+        self.navigationController?.popViewController(animated: true)
     }
     
     /*
      */
-    func textFieldShouldReturn(textFiled: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textFiled: UITextField) -> Bool {
         
 //        NSLog(textFiled.text!);
         
-        if(textFiled.text!.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) <= 0)
+        if(textFiled.text!.lengthOfBytes(using: String.Encoding.utf8) <= 0)
         {
             let alert: UIAlertView = UIAlertView.init(title: "提示", message: "内容不能为空", delegate: nil, cancelButtonTitle: "确定")
             alert.show()
@@ -138,7 +138,7 @@ class KFTagsChangeTableViewController: UITableViewController, UITextFieldDelegat
     
     /*
      */
-    func handleSingleTap(gestureRecognizer: UIGestureRecognizer) -> Void {
+    func handleSingleTap(_ gestureRecognizer: UIGestureRecognizer) -> Void {
         
         self.view.endEditing(true)
     }

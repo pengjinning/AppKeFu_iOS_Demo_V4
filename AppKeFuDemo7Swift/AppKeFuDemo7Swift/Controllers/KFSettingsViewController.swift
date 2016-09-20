@@ -29,25 +29,25 @@ class KFSettingsViewController: UITableViewController {
     }
     
     // MARK: - Table View
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3;
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "Cell"
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath)
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
         
-        if (indexPath.row == 0) {
+        if ((indexPath as NSIndexPath).row == 0) {
             
             cell.textLabel?.text = NSLocalizedString("PlayVoiceWhenSendMessage", comment: "")
             
             let sendMsgRingSwitch: UISwitch = UISwitch.init()
-            sendMsgRingSwitch.addTarget(self, action: #selector(switchSendMsgRing(_:)), forControlEvents: UIControlEvents.ValueChanged)
+            sendMsgRingSwitch.addTarget(self, action: #selector(switchSendMsgRing(_:)), for: UIControlEvents.valueChanged)
             
             let flag: Bool = AppKeFuLib.sharedInstance().shouldRingWhenSendMessage()
             if flag != true {
@@ -59,12 +59,12 @@ class KFSettingsViewController: UITableViewController {
             
             cell.accessoryView = sendMsgRingSwitch;
         }
-        else if (indexPath.row == 1) {
+        else if ((indexPath as NSIndexPath).row == 1) {
             
             cell.textLabel?.text = NSLocalizedString("PlayVoiceWhenReceiveMessage", comment: "")
             
             let receiveMsgRingSwitch: UISwitch = UISwitch.init()
-            receiveMsgRingSwitch.addTarget(self, action: #selector(switchReceiveMsgRing(_:)), forControlEvents: UIControlEvents.ValueChanged)
+            receiveMsgRingSwitch.addTarget(self, action: #selector(switchReceiveMsgRing(_:)), for: UIControlEvents.valueChanged)
             
             let flag: Bool = AppKeFuLib.sharedInstance().shouldRingWhenReceiveMessage()
             if flag != true {
@@ -77,12 +77,12 @@ class KFSettingsViewController: UITableViewController {
             cell.accessoryView = receiveMsgRingSwitch;
             
         }
-        else if (indexPath.row == 2) {
+        else if ((indexPath as NSIndexPath).row == 2) {
             
             cell.textLabel?.text = NSLocalizedString("Vibrate", comment: "")
             
             let msgVibrateSwitch: UISwitch = UISwitch.init();
-            msgVibrateSwitch.addTarget(self, action: #selector(switchMsgVibrate(_:)), forControlEvents: UIControlEvents.ValueChanged)
+            msgVibrateSwitch.addTarget(self, action: #selector(switchMsgVibrate(_:)), for: UIControlEvents.valueChanged)
             
             let flag: Bool = AppKeFuLib.sharedInstance().shouldVibrateWhenReceiveMessage()
             if flag != true {
@@ -99,22 +99,22 @@ class KFSettingsViewController: UITableViewController {
     }
     
     
-    func switchSendMsgRing(sender: UISwitch) ->Void
+    func switchSendMsgRing(_ sender: UISwitch) ->Void
     {
         let ring: UISwitch = sender 
-        AppKeFuLib.sharedInstance().setRingWhenSendMessage(ring.on)
+        AppKeFuLib.sharedInstance().setRingWhenSendMessage(ring.isOn)
     }
     
-    func switchReceiveMsgRing(sender: UISwitch) ->Void
+    func switchReceiveMsgRing(_ sender: UISwitch) ->Void
     {
         let ring: UISwitch = sender
-        AppKeFuLib.sharedInstance().setRingWhenReceiveMessage(ring.on)
+        AppKeFuLib.sharedInstance().setRingWhenReceiveMessage(ring.isOn)
     }
     
-    func switchMsgVibrate(sender: UISwitch) ->Void
+    func switchMsgVibrate(_ sender: UISwitch) ->Void
     {
         let ring: UISwitch = sender
-        AppKeFuLib.sharedInstance().setVibrateWhenReceiveMessage(ring.on)
+        AppKeFuLib.sharedInstance().setVibrateWhenReceiveMessage(ring.isOn)
     }
     
 }

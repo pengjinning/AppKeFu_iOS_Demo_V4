@@ -266,6 +266,7 @@
 					0409DDBF1D545CE20054D269 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = L5F47963M2;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -469,6 +470,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "AppKeFuDemo7Swift/AppKeFuDemo7Swift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -492,6 +494,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.appkefu.AppKeFuDemo7Swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "AppKeFuDemo7Swift/AppKeFuDemo7Swift-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

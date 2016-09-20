@@ -14,7 +14,7 @@ class KFRightButtonItemCallBackTableViewController: UIViewController {
         super.init(coder: aDecoder)!
     }
     
-    override init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) {
+    override init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: Bundle!) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
@@ -26,7 +26,7 @@ class KFRightButtonItemCallBackTableViewController: UIViewController {
         super.viewDidLoad()
         
         self.title = "回调示例页面"
-        self.view.backgroundColor = UIColor.whiteColor();
+        self.view.backgroundColor = UIColor.white;
     }
     
 }
