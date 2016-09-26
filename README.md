@@ -231,6 +231,12 @@ faqButtonTouchUpInsideCallback:(void (^)())faqButtonTouchUpInsideCallback;      
 //发送一对一语音文件，其中soundFileName 为录音文件本地路径
 -(void)sendVoiceMessage:(NSString *)soundFileName  userName:(NSString *)username;
 
+/////////////////////////////////////
+//获取当前服务器地址
+-(NSString *)getHost;
+//是否启用ip服务器地址
+-(void)enableIPServerMode:(BOOL)enableIPFlag;
+
 
 ```
 
