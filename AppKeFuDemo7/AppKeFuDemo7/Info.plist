@@ -42,10 +42,10 @@
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string></string>
+	<string>Pick Photo And Send</string>
 	<key>NSCameraUsageDescription</key>
-	<string></string>
+	<string>Take Picture And Send</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string></string>
+	<string>Record Voice And Send</string>
 </dict>
 </plist>
