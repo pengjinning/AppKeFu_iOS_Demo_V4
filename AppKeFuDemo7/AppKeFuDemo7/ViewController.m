@@ -12,6 +12,8 @@
 #import "SettingsViewController.h"
 #import "AppKeFuLib.h"
 
+#define DEMO_WOKGROUP_ID  @"wgdemo"
+
 @interface ViewController ()<UIAlertViewDelegate>
 
 @property (nonatomic, strong) NSString      *onlineStatus;
@@ -156,7 +158,7 @@
     else if (indexPath.row == 10)
     {
         cell.textLabel.text = [NSString stringWithFormat:@"11.未读消息数目: %lu",
-                               (unsigned long)[[AppKeFuLib sharedInstance] getUnreadMessageCount:@"wgdemo"]];
+                               (unsigned long)[[AppKeFuLib sharedInstance] getUnreadMessageCount:DEMO_WOKGROUP_ID]];
     }
     
     return cell;
@@ -184,7 +186,7 @@
     {
         //第一种打开会话页面方式
         [[AppKeFuLib sharedInstance] pushChatViewController:self.navigationController
-                                          withWorkgroupName:@"wgdemo"
+                                          withWorkgroupName:DEMO_WOKGROUP_ID
                                      hideRightBarButtonItem:NO
                                  rightBarButtonItemCallback:nil
                                      showInputBarSwitchMenu:YES
@@ -218,7 +220,7 @@
     {
         //第二种打开会话页面方式
         [[AppKeFuLib sharedInstance] presentChatViewController:self
-                                             withWorkgroupName:@"wgdemo2"
+                                             withWorkgroupName:DEMO_WOKGROUP_ID
                                         hideRightBarButtonItem:NO
                                     rightBarButtonItemCallback:nil
                                         showInputBarSwitchMenu:YES
@@ -250,7 +252,7 @@
     {
         //电商客服入口
         [[AppKeFuLib sharedInstance] pushChatViewController:self.navigationController
-                                          withWorkgroupName:@"wgdemo"
+                                          withWorkgroupName:DEMO_WOKGROUP_ID
                                      hideRightBarButtonItem:NO
                                  rightBarButtonItemCallback:nil
                                      showInputBarSwitchMenu:NO
@@ -290,7 +292,7 @@
     {
         //默认机器人应答，亦可呼叫人工客服
         [[AppKeFuLib sharedInstance] pushChatViewController:self.navigationController
-                                          withWorkgroupName:@"wgdemo"
+                                          withWorkgroupName:DEMO_WOKGROUP_ID
                                      hideRightBarButtonItem:NO
                                  rightBarButtonItemCallback:nil
                                      showInputBarSwitchMenu:YES
@@ -335,14 +337,14 @@
     else if (indexPath.row == 6)
     {
         [[AppKeFuLib sharedInstance] pushFAQViewController:self.navigationController
-                                         withWorkgroupName:@"wgdemo"
+                                         withWorkgroupName:DEMO_WOKGROUP_ID
                                   hidesBottomBarWhenPushed:YES];
         
     }
     else if (indexPath.row == 7)
     {
         [[AppKeFuLib sharedInstance] presentFAQViewController:self
-                                            withWorkgroupName:@"wgdemo"
+                                            withWorkgroupName:DEMO_WOKGROUP_ID
                                      hidesBottomBarWhenPushed:YES];
     }
     else if (indexPath.row == 8)
@@ -371,8 +373,7 @@
         self.title = @"微客服4(登录成功)";
         //
         //查询工作组在线状态，需要将wgdemo替换为开发者自己的 “工作组名称”，请在官方管理后台申请，地址：http://admin.appkefu.com/AppKeFu/admin
-        [[AppKeFuLib sharedInstance] queryWorkgroupOnlineStatus:@"wgdemo"];
-        [[AppKeFuLib sharedInstance] queryWorkgroupOnlineStatus:@"wgdemo2"];
+        [[AppKeFuLib sharedInstance] queryWorkgroupOnlineStatus:DEMO_WOKGROUP_ID];
     }
     else
     {
@@ -398,35 +399,23 @@
     NSLog(@"%s workgroupName:%@, status:%@", __PRETTY_FUNCTION__, workgroupName, status);
     
     //
-    if ([workgroupName isEqualToString:@"wgdemo"]) {
+    if ([workgroupName isEqualToString:DEMO_WOKGROUP_ID]) {
         
         //客服工作组在线
         if ([status isEqualToString:@"online"])
         {
             onlineStatus = NSLocalizedString(@"1.push在线咨询演示1(在线)", nil);
-        }
-        //客服工作组离线
-        else
-        {
-            onlineStatus = NSLocalizedString(@"1.push在线咨询演示1(离线)", nil);
-        }
-        
-    }
-    //
-    else if ([workgroupName isEqualToString:@"wgdemo2"]) {
-        
-        //客服工作组在线
-        if ([status isEqualToString:@"online"])
-        {
             onlineStatus2 = NSLocalizedString(@"2.present在线咨询演示2(在线)", nil);
         }
         //客服工作组离线
         else
         {
+            onlineStatus = NSLocalizedString(@"1.push在线咨询演示1(离线)", nil);
             onlineStatus2 = NSLocalizedString(@"2.present在线咨询演示2(离线)", nil);
         }
+        
     }
-    
+
     
     [self.tableView reloadData];
 }
@@ -482,8 +471,7 @@
     if (buttonIndex == 1) {
         
         //清空与客服工作组 "wgdemo" 的所有聊天记录
-        [[AppKeFuLib sharedInstance] deleteMessagesWith:@"wgdemo"];
-        [[AppKeFuLib sharedInstance] deleteMessagesWith:@"wgdemo2"];
+        [[AppKeFuLib sharedInstance] deleteMessagesWith:DEMO_WOKGROUP_ID];
     }
 }
 

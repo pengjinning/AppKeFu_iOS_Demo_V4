@@ -53,7 +53,7 @@
      注意：如果您曾经运行过上一版Demo，请首先删除，然后再运行此Demo.
      
      微客服 初始化，请到官方网站申请appkey，网址：http://admin.appkefu.com/AppKeFu/admin/index.php
-     开发指南：http://admin.appkefu.com/AppKeFu/tutorial-iOS3.html
+     开发指南：http://admin.appkefu.com/AppKeFu/doc/ios.html
      开发者QQ群：474794719
      */
     [[AppKeFuLib sharedInstance] loginWithAppkey:APP_KEY];
