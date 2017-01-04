@@ -255,6 +255,8 @@ faqButtonTouchUpInsideCallback:(void (^)())faqButtonTouchUpInsideCallback;      
 * 增加Ip Server登录模式， 解决部分移动运营商域名解析问题
 * 优化用户体验
 
+#### 2017-01-04: version 4.3.0
+* 增加支持https
 
 
 
