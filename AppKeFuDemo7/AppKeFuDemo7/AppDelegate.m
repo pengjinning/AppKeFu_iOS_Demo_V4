@@ -56,6 +56,7 @@
      开发指南：http://admin.appkefu.com/AppKeFu/doc/ios.html
      开发者QQ群：474794719
      */
+//    [[AppKeFuLib sharedInstance] enableIPServerMode:TRUE];//如果要
     [[AppKeFuLib sharedInstance] loginWithAppkey:APP_KEY];
     
     //注册离线消息推送
@@ -94,7 +95,6 @@
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo{
     NSLog(@"收到推送消息。%@", userInfo);
-    
     /*
      {
         aps =     {
@@ -107,7 +107,6 @@
         workgroup = wgdemo;
      }
      */
-    
 }
 
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
@@ -134,6 +133,7 @@
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
     
     //切换到前台重新登录
+//    [[AppKeFuLib sharedInstance] enableIPServerMode:TRUE];
     [[AppKeFuLib sharedInstance] loginWithAppkey:APP_KEY];
     [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
 
