@@ -258,7 +258,8 @@ faqButtonTouchUpInsideCallback:(void (^)())faqButtonTouchUpInsideCallback;      
 #### 2017-01-04: version 4.3.0
 * 增加支持https
 
-
+#### 2017-01-06: version 4.3.1
+* 优化支持https
 
 
 

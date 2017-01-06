@@ -56,7 +56,9 @@
      开发指南：http://admin.appkefu.com/AppKeFu/doc/ios.html
      开发者QQ群：474794719
      */
-//    [[AppKeFuLib sharedInstance] enableIPServerMode:TRUE];//如果要
+    
+//如果要启用ip服务器，请设置为TRUE,否则请设置为FALSE, 注意如果设置为TRUE,则客服端登录的时候也需要选择IP服务器
+    [[AppKeFuLib sharedInstance] enableIPServerMode:FALSE];//务必在调用login接口之前调用
     [[AppKeFuLib sharedInstance] loginWithAppkey:APP_KEY];
     
     //注册离线消息推送
@@ -133,7 +135,8 @@
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
     
     //切换到前台重新登录
-//    [[AppKeFuLib sharedInstance] enableIPServerMode:TRUE];
+//如果要启用ip服务器，请设置为TRUE,否则请设置为FALSE, 注意如果设置为TRUE,则客服端登录的时候也需要选择IP服务器
+    [[AppKeFuLib sharedInstance] enableIPServerMode:FALSE];//务必在调用login接口之前调用
     [[AppKeFuLib sharedInstance] loginWithAppkey:APP_KEY];
     [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
 
