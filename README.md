@@ -6,15 +6,15 @@ iOS客服demo 4.x 版本 - 致力于为开发者提供极致用户体验的SDK
 
 ## 三种集成方式
 
-### CocoaPods, 最新版本 4.4.2
+### 1.CocoaPods, 最新版本 4.4.2
 
 * pod 'AppKeFu'
 
-### 集成framework
+### 2.集成framework
 
 * 具体可以参见Demo和开发文档
 
-### 集成.a静态库
+### 3.集成.a静态库
 
 * 具体可以参见Demo和开发文档
 
