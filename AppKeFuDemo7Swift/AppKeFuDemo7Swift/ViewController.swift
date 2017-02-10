@@ -222,7 +222,7 @@ class ViewController: UITableViewController, UIAlertViewDelegate {
                                                                withKefuAvatarImage: nil,
                                                                withUserAvatarImage: nil,
                                                                shouldShowGoodsInfo: true,
-                                                               withGoodsImageViewURL: "http://admin.appkefu.com/AppKeFu/images/dingyue.jpg",
+                                                               withGoodsImageViewURL: "https://admin.appkefu.com/AppKeFu/images/dingyue.jpg",
                                                                withGoodsTitleDetail: "商品信息商品简介商品简介商品信息商品简介商品简介商品信息商品简介商品简介",
                                                                withGoodsPrice: "￥200000.00",
                                                                withGoodsURL: "http://appkefu.com",

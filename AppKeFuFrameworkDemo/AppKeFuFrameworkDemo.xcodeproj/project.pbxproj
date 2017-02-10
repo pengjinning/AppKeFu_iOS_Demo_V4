@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D613D451E4D566500A05BEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D613D441E4D566500A05BEE /* main.m */; };
+		3D613D481E4D566500A05BEE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D613D471E4D566500A05BEE /* AppDelegate.m */; };
+		3D613D4B1E4D566500A05BEE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D613D4A1E4D566500A05BEE /* ViewController.m */; };
+		3D613D4E1E4D566500A05BEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D613D4C1E4D566500A05BEE /* Main.storyboard */; };
+		3D613D501E4D566500A05BEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D613D4F1E4D566500A05BEE /* Assets.xcassets */; };
+		3D613D531E4D566500A05BEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D613D511E4D566500A05BEE /* LaunchScreen.storyboard */; };
+		3D613D6B1E4D571700A05BEE /* KFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D613D621E4D571700A05BEE /* KFNavigationController.m */; };
+		3D613D6C1E4D571700A05BEE /* KFRightButtonItemCallBackTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D613D641E4D571700A05BEE /* KFRightButtonItemCallBackTableViewController.m */; };
+		3D613D6D1E4D571700A05BEE /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D613D661E4D571700A05BEE /* SettingsViewController.m */; };
+		3D613D6E1E4D571700A05BEE /* TagsChangeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D613D681E4D571700A05BEE /* TagsChangeTableViewController.m */; };
+		3D613D6F1E4D571700A05BEE /* TagsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D613D6A1E4D571700A05BEE /* TagsTableViewController.m */; };
+		3D613D711E4D58CE00A05BEE /* AppKeFuFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D613D5E1E4D56D500A05BEE /* AppKeFuFramework.framework */; };
+		3D613D721E4D58CF00A05BEE /* AppKeFuFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D613D5E1E4D56D500A05BEE /* AppKeFuFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3D613F101E4D608900A05BEE /* AppKeFuResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3D613F0F1E4D608900A05BEE /* AppKeFuResources.bundle */; };
+		3D613F151E4D649300A05BEE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D613F171E4D649300A05BEE /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3D613D731E4D58CF00A05BEE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3D613D721E4D58CF00A05BEE /* AppKeFuFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3D613D401E4D566500A05BEE /* AppKeFuFrameworkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppKeFuFrameworkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D613D441E4D566500A05BEE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3D613D461E4D566500A05BEE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3D613D471E4D566500A05BEE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3D613D491E4D566500A05BEE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3D613D4A1E4D566500A05BEE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3D613D4D1E4D566500A05BEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D613D4F1E4D566500A05BEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D613D521E4D566500A05BEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D613D541E4D566500A05BEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D613D5E1E4D56D500A05BEE /* AppKeFuFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppKeFuFramework.framework; sourceTree = "<group>"; };
+		3D613D611E4D571700A05BEE /* KFNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFNavigationController.h; sourceTree = "<group>"; };
+		3D613D621E4D571700A05BEE /* KFNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFNavigationController.m; sourceTree = "<group>"; };
+		3D613D631E4D571700A05BEE /* KFRightButtonItemCallBackTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFRightButtonItemCallBackTableViewController.h; sourceTree = "<group>"; };
+		3D613D641E4D571700A05BEE /* KFRightButtonItemCallBackTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFRightButtonItemCallBackTableViewController.m; sourceTree = "<group>"; };
+		3D613D651E4D571700A05BEE /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		3D613D661E4D571700A05BEE /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		3D613D671E4D571700A05BEE /* TagsChangeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagsChangeTableViewController.h; sourceTree = "<group>"; };
+		3D613D681E4D571700A05BEE /* TagsChangeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagsChangeTableViewController.m; sourceTree = "<group>"; };
+		3D613D691E4D571700A05BEE /* TagsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagsTableViewController.h; sourceTree = "<group>"; };
+		3D613D6A1E4D571700A05BEE /* TagsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagsTableViewController.m; sourceTree = "<group>"; };
+		3D613F0F1E4D608900A05BEE /* AppKeFuResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AppKeFuResources.bundle; sourceTree = "<group>"; };
+		3D613F111E4D63F900A05BEE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		3D613F121E4D63FB00A05BEE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		3D613F161E4D649300A05BEE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		3D613F181E4D649700A05BEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D613D3D1E4D566500A05BEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D613D711E4D58CE00A05BEE /* AppKeFuFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D613D371E4D566500A05BEE = {
+			isa = PBXGroup;
+			children = (
+				3D613D421E4D566500A05BEE /* AppKeFuFrameworkDemo */,
+				3D613D411E4D566500A05BEE /* Products */,
+				3D613D741E4D591500A05BEE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3D613D411E4D566500A05BEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D613D401E4D566500A05BEE /* AppKeFuFrameworkDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D613D421E4D566500A05BEE /* AppKeFuFrameworkDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3D613D5D1E4D56D500A05BEE /* Frameworks */,
+				3D613D601E4D571700A05BEE /* Controllers */,
+				3D613D461E4D566500A05BEE /* AppDelegate.h */,
+				3D613D471E4D566500A05BEE /* AppDelegate.m */,
+				3D613D491E4D566500A05BEE /* ViewController.h */,
+				3D613D4A1E4D566500A05BEE /* ViewController.m */,
+				3D613D4C1E4D566500A05BEE /* Main.storyboard */,
+				3D613D4F1E4D566500A05BEE /* Assets.xcassets */,
+				3D613F171E4D649300A05BEE /* Localizable.strings */,
+				3D613D511E4D566500A05BEE /* LaunchScreen.storyboard */,
+				3D613D541E4D566500A05BEE /* Info.plist */,
+				3D613D431E4D566500A05BEE /* Supporting Files */,
+			);
+			path = AppKeFuFrameworkDemo;
+			sourceTree = "<group>";
+		};
+		3D613D431E4D566500A05BEE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D613D441E4D566500A05BEE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D613D5D1E4D56D500A05BEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D613D5E1E4D56D500A05BEE /* AppKeFuFramework.framework */,
+				3D613F0F1E4D608900A05BEE /* AppKeFuResources.bundle */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D613D601E4D571700A05BEE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D613D611E4D571700A05BEE /* KFNavigationController.h */,
+				3D613D621E4D571700A05BEE /* KFNavigationController.m */,
+				3D613D631E4D571700A05BEE /* KFRightButtonItemCallBackTableViewController.h */,
+				3D613D641E4D571700A05BEE /* KFRightButtonItemCallBackTableViewController.m */,
+				3D613D651E4D571700A05BEE /* SettingsViewController.h */,
+				3D613D661E4D571700A05BEE /* SettingsViewController.m */,
+				3D613D671E4D571700A05BEE /* TagsChangeTableViewController.h */,
+				3D613D681E4D571700A05BEE /* TagsChangeTableViewController.m */,
+				3D613D691E4D571700A05BEE /* TagsTableViewController.h */,
+				3D613D6A1E4D571700A05BEE /* TagsTableViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3D613D741E4D591500A05BEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D613D3F1E4D566500A05BEE /* AppKeFuFrameworkDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D613D571E4D566500A05BEE /* Build configuration list for PBXNativeTarget "AppKeFuFrameworkDemo" */;
+			buildPhases = (
+				3D613D3C1E4D566500A05BEE /* Sources */,
+				3D613D3D1E4D566500A05BEE /* Frameworks */,
+				3D613D3E1E4D566500A05BEE /* Resources */,
+				3D613D731E4D58CF00A05BEE /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppKeFuFrameworkDemo;
+			productName = AppKeFuFrameworkDemo;
+			productReference = 3D613D401E4D566500A05BEE /* AppKeFuFrameworkDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D613D381E4D566500A05BEE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = jackning;
+				TargetAttributes = {
+					3D613D3F1E4D566500A05BEE = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = L5F47963M2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3D613D3B1E4D566500A05BEE /* Build configuration list for PBXProject "AppKeFuFrameworkDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D613D371E4D566500A05BEE;
+			productRefGroup = 3D613D411E4D566500A05BEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D613D3F1E4D566500A05BEE /* AppKeFuFrameworkDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D613D3E1E4D566500A05BEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D613F151E4D649300A05BEE /* Localizable.strings in Resources */,
+				3D613D531E4D566500A05BEE /* LaunchScreen.storyboard in Resources */,
+				3D613D501E4D566500A05BEE /* Assets.xcassets in Resources */,
+				3D613F101E4D608900A05BEE /* AppKeFuResources.bundle in Resources */,
+				3D613D4E1E4D566500A05BEE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D613D3C1E4D566500A05BEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D613D6B1E4D571700A05BEE /* KFNavigationController.m in Sources */,
+				3D613D4B1E4D566500A05BEE /* ViewController.m in Sources */,
+				3D613D6F1E4D571700A05BEE /* TagsTableViewController.m in Sources */,
+				3D613D481E4D566500A05BEE /* AppDelegate.m in Sources */,
+				3D613D6D1E4D571700A05BEE /* SettingsViewController.m in Sources */,
+				3D613D451E4D566500A05BEE /* main.m in Sources */,
+				3D613D6E1E4D571700A05BEE /* TagsChangeTableViewController.m in Sources */,
+				3D613D6C1E4D571700A05BEE /* KFRightButtonItemCallBackTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3D613D4C1E4D566500A05BEE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D613D4D1E4D566500A05BEE /* Base */,
+				3D613F111E4D63F900A05BEE /* zh-Hans */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D613D511E4D566500A05BEE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D613D521E4D566500A05BEE /* Base */,
+				3D613F121E4D63FB00A05BEE /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3D613F171E4D649300A05BEE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D613F161E4D649300A05BEE /* zh-Hans */,
+				3D613F181E4D649700A05BEE /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D613D551E4D566500A05BEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D613D561E4D566500A05BEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D613D581E4D566500A05BEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L5F47963M2;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppKeFuFrameworkDemo/AppKeFu",
+					"$(PROJECT_DIR)/AppKeFuFrameworkDemo/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = AppKeFuFrameworkDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appkefu.AppKeFuFrameworkDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3D613D591E4D566500A05BEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L5F47963M2;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppKeFuFrameworkDemo/AppKeFu",
+					"$(PROJECT_DIR)/AppKeFuFrameworkDemo/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = AppKeFuFrameworkDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appkefu.AppKeFuFrameworkDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D613D3B1E4D566500A05BEE /* Build configuration list for PBXProject "AppKeFuFrameworkDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D613D551E4D566500A05BEE /* Debug */,
+				3D613D561E4D566500A05BEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D613D571E4D566500A05BEE /* Build configuration list for PBXNativeTarget "AppKeFuFrameworkDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D613D581E4D566500A05BEE /* Debug */,
+				3D613D591E4D566500A05BEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D613D381E4D566500A05BEE /* Project object */;
+}
