@@ -34,6 +34,35 @@ iOS客服demo 4.x 版本 - 致力于为开发者提供极致用户体验的SDK
 
 http://admin.appkefu.com/AppKeFu/doc/ios.html
 
+
+## 更新日志
+
+#### 2017-03-08: version 4.4.1
+* 优化图片加载
+
+#### 2017-02-09: version 4.3.2
+* 增加支持framework集成方式
+* 其他优化
+
+#### 2017-01-06: version 4.3.1
+* 优化支持https
+
+#### 2017-01-04: version 4.3.0
+* 增加支持https
+
+#### 2016-09-26: version 4.2.0
+* 增加Ip Server登录模式， 解决部分移动运营商域名解析问题
+* 优化用户体验
+
+#### 2016-09-14: version 4.1.6
+* 兼容 Xcode 8
+* 兼容 iOS 10 && swift 3.0
+
+#### 2016-09-14: version 4.1.5
+* 优化用户体验
+* 支持接收播放PC客服端语音
+
+
  
 ## 接口一览
 
@@ -255,29 +284,6 @@ faqButtonTouchUpInsideCallback:(void (^)())faqButtonTouchUpInsideCallback;      
 ```
 
 
-## 更新日志
-
-#### 2017-02-09: version 4.3.2
-* 增加支持framework集成方式
-* 其他优化
-
-#### 2017-01-06: version 4.3.1
-* 优化支持https
-
-#### 2017-01-04: version 4.3.0
-* 增加支持https
-
-#### 2016-09-26: version 4.2.0
-* 增加Ip Server登录模式， 解决部分移动运营商域名解析问题
-* 优化用户体验
-
-#### 2016-09-14: version 4.1.6
-* 兼容 Xcode 8
-* 兼容 iOS 10 && swift 3.0
-
-#### 2016-09-14: version 4.1.5
-* 优化用户体验
-* 支持接收播放PC客服端语音
 
 
 

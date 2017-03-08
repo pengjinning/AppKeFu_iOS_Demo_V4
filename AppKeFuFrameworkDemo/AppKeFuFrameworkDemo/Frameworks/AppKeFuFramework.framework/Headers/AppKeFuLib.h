@@ -282,6 +282,9 @@ faqButtonTouchUpInsideCallback:(void (^)())faqButtonTouchUpInsideCallback;
 -(void) msgPreKnowBack:(NSString *)workgroupName withAgentjid:(NSString *)agentjid withContent:(NSString *)content;
 
 //
+-(void) leaveMessage:(NSString *)workgroupName withMobile:(NSString *)mobile withContent:(NSString *)content withReplytype:(NSString *)replytype;
+
+//
 #pragma mark 用户标签
 //函数21：设置用户标签昵称
 - (NSString *)getTagNickname;
