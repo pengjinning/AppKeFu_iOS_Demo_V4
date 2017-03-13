@@ -38,7 +38,7 @@ http://admin.appkefu.com/AppKeFu/doc/ios.html
 ## 更新日志
 
 
-#### 2017-03-08: version 4.4.2
+#### 2017-03-13: version 4.4.4
 * 优化framework表情
 
 #### 2017-03-08: version 4.4.1
