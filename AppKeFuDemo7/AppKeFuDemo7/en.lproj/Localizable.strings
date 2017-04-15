@@ -77,6 +77,7 @@
 
 "SendLink" = "SendLink";
 "NetworkLost" = "NetWork Not Reachable";
+"SimulatorNotSupported"="Simulator Not Supported";
 
 "robotNotFound" = "Sorry, We have not found answer for you:";
 "robotViewFAQ" = "View FAQ";

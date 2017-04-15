@@ -93,7 +93,20 @@
 #define APPKEFU_UPLOAD_VOICEURL                     @"https://upload.appkefu.com/AppKeFu/uploadoss/uploadiOSVoice.php"
 
 
+//#define AppKeFuLocalizedString(key, comment) \
+//NSLocalizedStringFromTableInBundle((key), @"AppKeFu", [[NSBundle mainBundle] pathForResource:@"AppKeFuResources.bundle/Localizable" ofType:@"strings"], (comment))
+
+
+#define AppKeFuLocalizedString(key, comment) \
+NSLocalizedStringFromTableInBundle((key), @"AppKeFu", [NSBundle bundleWithPath:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"AppKeFuResources.bundle"]], (comment))
+
+
 #endif /* AppKeFuDefines_h */
+
+
+
+
+
 
 
 

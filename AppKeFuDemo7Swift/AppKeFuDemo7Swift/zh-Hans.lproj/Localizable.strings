@@ -78,6 +78,7 @@
 
 "SendLink" = "发送链接";
 "NetworkLost" = "当前无网络,请稍后重试";
+"SimulatorNotSupported"="模拟器不支持";
 
 "robotNotFound" = "很抱歉,客服小秘书未能理解您的问题,请选择以下操作:";
 "robotViewFAQ" = "查看常见问题";
