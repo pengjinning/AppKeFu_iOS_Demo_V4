@@ -52,6 +52,9 @@
 #define APPKEFU_USER_AVATAR_IMAGE                   @"appkefu_user_avatar_image"
 #define APPKEFU_SESSIONID                           @"appkefu_sessionid"
 #define APPKEFU_TRANSFER_ACCEPT_CHAT                @"appkefu_transfer_accept_chat2"
+#define APPKEFU_HIDE_RATE_BUTTON                    @"appkefu_hide_rate_button"
+#define APPKEFU_HIDE_FAQ_BUTTON                     @"appkefu_hide_faq_button"
+
 
 //
 #define APPKEFU_WORKGROUP_NAMESPACE                 @"http://jabber.org/protocol/workgroup"
@@ -97,8 +100,11 @@
 //NSLocalizedStringFromTableInBundle((key), @"AppKeFu", [[NSBundle mainBundle] pathForResource:@"AppKeFuResources.bundle/Localizable" ofType:@"strings"], (comment))
 
 
+//http://dalezak.ca/2012/12/nslocalizedstring-framework.html
+//http://blog.xianqu.org/2015/08/pod-resources/
 #define AppKeFuLocalizedString(key, comment) \
 NSLocalizedStringFromTableInBundle((key), @"AppKeFu", [NSBundle bundleWithPath:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"AppKeFuResources.bundle"]], (comment))
+
 
 
 #endif /* AppKeFuDefines_h */

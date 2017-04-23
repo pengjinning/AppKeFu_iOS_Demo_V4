@@ -6,7 +6,7 @@ iOS客服demo 4.x 版本 - 致力于为开发者提供极致用户体验的SDK
 
 ## 三种集成方式
 
-### 1.CocoaPods, 最新版本 4.4.9.2
+### 1.CocoaPods, 最新版本 4.5.0
 
 * pod 'AppKeFu'
 
@@ -36,6 +36,8 @@ http://admin.appkefu.com/AppKeFu/doc/ios.html
 
 
 ## 更新日志
+#### 2017-04-23: version 4.5.0
+* 增加可选隐藏 FAQ和满意度 参数
 
 #### 2017-04-15: version 4.4.9
 * 优化国际化处理

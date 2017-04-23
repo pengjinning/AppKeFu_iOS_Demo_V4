@@ -99,6 +99,8 @@ typedef enum {
 //      withLeftBarButtonItem，否则此参数不会生效
            withKefuAvatarImage:(UIImage *)kefuAvatarImage                       //13. 替换默认客服头像, 设为nil则保留默认头像
            withUserAvatarImage:(UIImage *)userAvatarImage                       //14. 替换默认用户头像, 设为nil则保留默认头像
+                hideRateButton:(BOOL)hideRateButton
+                 hideFAQButton:(BOOL)hideFAQButton
 
            shouldShowGoodsInfo:(BOOL)showGoodsInfo                              //15.是否显示商品信息,
 //      取值：true,显示商品信息; false,不显示商品信息
@@ -130,6 +132,8 @@ faqButtonTouchUpInsideCallback:(void (^)())faqButtonTouchUpInsideCallback;      
                         mustRate:(BOOL)mustRate
              withKefuAvatarImage:(UIImage *)kefuAvatarImage
              withUserAvatarImage:(UIImage *)userAvatarImage
+                  hideRateButton:(BOOL)hideRateButton
+                   hideFAQButton:(BOOL)hideFAQButton
 
              shouldShowGoodsInfo:(BOOL)showGoodsInfo
            withGoodsImageViewURL:(NSString *)goodsImageViewURL

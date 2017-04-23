@@ -155,6 +155,8 @@ typedef enum {
                       mustRate:(BOOL)mustRate
            withKefuAvatarImage:(UIImage *)kefuAvatarImage
            withUserAvatarImage:(UIImage *)userAvatarImage
+                hideRateButton:(BOOL)hideRateButton
+                 hideFAQButton:(BOOL)hideFAQButton
 
            shouldShowGoodsInfo:(BOOL)showGoodsInfo
          withGoodsImageViewURL:(NSString *)goodsImageViewURL
@@ -184,6 +186,8 @@ faqButtonTouchUpInsideCallback:(void (^)())faqButtonTouchUpInsideCallback;
                         mustRate:(BOOL)mustRate
              withKefuAvatarImage:(UIImage *)kefuAvatarImage
              withUserAvatarImage:(UIImage *)userAvatarImage
+                  hideRateButton:(BOOL)hideRateButton
+                   hideFAQButton:(BOOL)hideFAQButton
 
              shouldShowGoodsInfo:(BOOL)showGoodsInfo
            withGoodsImageViewURL:(NSString *)goodsImageViewURL

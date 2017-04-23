@@ -209,6 +209,8 @@
          // 否则此参数不会生效
                                         withKefuAvatarImage:nil
                                         withUserAvatarImage:nil
+                                             hideRateButton:false
+                                              hideFAQButton:false
          
                                         shouldShowGoodsInfo:FALSE
                                       withGoodsImageViewURL:nil
@@ -242,6 +244,8 @@
                                                       mustRate:FALSE
                                            withKefuAvatarImage:nil
                                            withUserAvatarImage:nil
+                                                hideRateButton:false
+                                                 hideFAQButton:true
          
                                            shouldShowGoodsInfo:FALSE
                                          withGoodsImageViewURL:nil
@@ -274,6 +278,8 @@
                                                    mustRate:FALSE
                                         withKefuAvatarImage:nil
                                         withUserAvatarImage:nil
+                                             hideRateButton:false
+                                              hideFAQButton:true
          
          //下面5个参数专为显示商品信息设置，具体含义可以参考AppKeFuLib.h文件里面对接口的介绍
                                         shouldShowGoodsInfo:TRUE
@@ -314,6 +320,8 @@
                                                    mustRate:FALSE
                                         withKefuAvatarImage:nil //[UIImage imageNamed:@"kefu_avatar"]
                                         withUserAvatarImage:[UIImage imageNamed:@"user_avatar"]
+                                             hideRateButton:false
+                                              hideFAQButton:true
          
                                         shouldShowGoodsInfo:FALSE
                                       withGoodsImageViewURL:nil
