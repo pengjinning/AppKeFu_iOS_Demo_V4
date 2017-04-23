@@ -99,18 +99,20 @@ typedef enum {
 //      withLeftBarButtonItem，否则此参数不会生效
            withKefuAvatarImage:(UIImage *)kefuAvatarImage                       //13. 替换默认客服头像, 设为nil则保留默认头像
            withUserAvatarImage:(UIImage *)userAvatarImage                       //14. 替换默认用户头像, 设为nil则保留默认头像
+                hideRateButton:(BOOL)hideRateButton                             //15. false：显示满意度评价按钮，true: 隐藏满意度评价按钮
+                 hideFAQButton:(BOOL)hideFAQButton                              //16. false: 显示FAQ按钮，true: 隐藏FAQ按钮
 
-           shouldShowGoodsInfo:(BOOL)showGoodsInfo                              //15.是否显示商品信息,
+           shouldShowGoodsInfo:(BOOL)showGoodsInfo                              //17.是否显示商品信息,
 //      取值：true,显示商品信息; false,不显示商品信息
-         withGoodsImageViewURL:(NSString *)goodsImageViewURL                    //16.商品信息图片URL链接地址
-          withGoodsTitleDetail:(NSString *)goodsTitleDetail                     //17.商品信息简介
-                withGoodsPrice:(NSString *)goodsPrice                           //18.商品价格
-                  withGoodsURL:(NSString *)goodsURL                             //19.商品链接，点击“发送链接”按钮发送给客服
-           withGoodsCallbackID:(NSString *)goodsCallbackID                      //20.点击商品区域回调参数
-      goodsInfoClickedCallback:(void (^)(NSString *goodsCallbackId))goodsInfoClickedCallback //21.点击商品区域回调接口
+         withGoodsImageViewURL:(NSString *)goodsImageViewURL                    //18.商品信息图片URL链接地址
+          withGoodsTitleDetail:(NSString *)goodsTitleDetail                     //19.商品信息简介
+                withGoodsPrice:(NSString *)goodsPrice                           //20.商品价格
+                  withGoodsURL:(NSString *)goodsURL                             //21.商品链接，点击“发送链接”按钮发送给客服
+           withGoodsCallbackID:(NSString *)goodsCallbackID                      //22.点击商品区域回调参数
+      goodsInfoClickedCallback:(void (^)(NSString *goodsCallbackId))goodsInfoClickedCallback //23.点击商品区域回调接口
 
-    httpLinkURLClickedCallBack:(void (^)(NSString *url))httpLinkURLClickedCallback //22.点击URL的回调函数，如果不想使用回调,请设置为nil
-faqButtonTouchUpInsideCallback:(void (^)())faqButtonTouchUpInsideCallback;      //23.自定义FAQ常见问题button回调，可在此打开自己的常见问题FAQ页面
+    httpLinkURLClickedCallBack:(void (^)(NSString *url))httpLinkURLClickedCallback //24.点击URL的回调函数，如果不想使用回调,请设置为nil
+faqButtonTouchUpInsideCallback:(void (^)())faqButtonTouchUpInsideCallback;      //25.自定义FAQ常见问题button回调，可在此打开自己的常见问题FAQ页面
 
 
 //4.1
