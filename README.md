@@ -112,33 +112,33 @@ http://admin.appkefu.com/AppKeFu/doc/ios.html
         showInputBarSwitchMenu:(BOOL)shouldShowInputBarSwitchMenu               //4. 在会话窗口显示自定义菜单, 类似于微信的自定义菜单；
 //      如果需要显示自定义菜单,请首先到管理后台分配自定义菜单,请分配且只分配三个自定义菜单,多于三个的自定义菜单将不予显示。
 //      显示: YES, 不显示: NO
-withLeftBarButtonItem:(UIButton *)leftBarButtonItem
-withTitleView:(UILabel *)titleView                             //5. 自定义会话窗户标题
-withRightBarButtonItem:(UIButton *)rightBarButtonItem                   //6. 自定义会话窗口右上角按钮,
+        withLeftBarButtonItem:(UIButton *)leftBarButtonItem
+                withTitleView:(UILabel *)titleView                             //5. 自定义会话窗户标题
+       withRightBarButtonItem:(UIButton *)rightBarButtonItem                   //6. 自定义会话窗口右上角按钮,
 //      如果需要保留默认, 请设置为nill
-withProductInfo:(NSString *)productInfo                          //7. 成功连接客服之后,自动将此消息发送给客服,
+             withProductInfo:(NSString *)productInfo                          //7. 成功连接客服之后,自动将此消息发送给客服,
 //   如果不需要发送此信息, 可将其设置为 nil 或者 ""
-withLeftBarButtonItemColor:(UIColor *)color                                 //8. 导航左上角“结束会话”按钮颜色
-hidesBottomBarWhenPushed:(BOOL)shouldHide                                 //9. 从具有Tabbar的viewController打开的时候,隐藏tabbar
-showHistoryMessage:(BOOL)isShow                                     //10. 是否显示历史聊天记录，显示:YES, 不显示:NO
-defaultRobot:(BOOL)defaultRobot                               //11. 默认机器人自动应答, 亦可呼叫人工客服,
+    withLeftBarButtonItemColor:(UIColor *)color                                 //8. 导航左上角“结束会话”按钮颜色
+    hidesBottomBarWhenPushed:(BOOL)shouldHide                                 //9. 从具有Tabbar的viewController打开的时候,隐藏tabbar
+          showHistoryMessage:(BOOL)isShow                                     //10. 是否显示历史聊天记录，显示:YES, 不显示:NO
+                defaultRobot:(BOOL)defaultRobot                               //11. 默认机器人自动应答, 亦可呼叫人工客服,
 //   开启机器人: YES, 人工客服: NO
-mustRate:(BOOL)mustRate                                   //12.在关闭会话的时候是否强制用户评价，强制：YES, 不评价：NO
+                    mustRate:(BOOL)mustRate                                   //12.在关闭会话的时候是否强制用户评价，强制：YES, 不评价：NO
 //   注意：如果要强制用户在关闭会话的时候评价，需要首先设置参数：
 //      withLeftBarButtonItem，否则此参数不会生效
-withKefuAvatarImage:(UIImage *)kefuAvatarImage                       //13. 替换默认客服头像, 设为nil则保留默认头像
-withUserAvatarImage:(UIImage *)userAvatarImage                       //14. 替换默认用户头像, 设为nil则保留默认头像
-hideRateButton:(BOOL)hideRateButton                             //15. false：显示满意度评价按钮，true: 隐藏满意度评价按钮
-hideFAQButton:(BOOL)hideFAQButton                              //16. false: 显示FAQ按钮，true: 隐藏FAQ按钮
+        withKefuAvatarImage:(UIImage *)kefuAvatarImage                       //13. 替换默认客服头像, 设为nil则保留默认头像
+        withUserAvatarImage:(UIImage *)userAvatarImage                       //14. 替换默认用户头像, 设为nil则保留默认头像
+             hideRateButton:(BOOL)hideRateButton                             //15. false：显示满意度评价按钮，true: 隐藏满意度评价按钮
+              hideFAQButton:(BOOL)hideFAQButton                              //16. false: 显示FAQ按钮，true: 隐藏FAQ按钮
 
-shouldShowGoodsInfo:(BOOL)showGoodsInfo                              //17.是否显示商品信息,
+        shouldShowGoodsInfo:(BOOL)showGoodsInfo                              //17.是否显示商品信息,
 //      取值：true,显示商品信息; false,不显示商品信息
-withGoodsImageViewURL:(NSString *)goodsImageViewURL                    //18.商品信息图片URL链接地址
-withGoodsTitleDetail:(NSString *)goodsTitleDetail                     //19.商品信息简介
-withGoodsPrice:(NSString *)goodsPrice                           //20.商品价格
-withGoodsURL:(NSString *)goodsURL                             //21.商品链接，点击“发送链接”按钮发送给客服
-withGoodsCallbackID:(NSString *)goodsCallbackID                      //22.点击商品区域回调参数
-goodsInfoClickedCallback:(void (^)(NSString *goodsCallbackId))goodsInfoClickedCallback //23.点击商品区域回调接口
+      withGoodsImageViewURL:(NSString *)goodsImageViewURL                    //18.商品信息图片URL链接地址
+       withGoodsTitleDetail:(NSString *)goodsTitleDetail                     //19.商品信息简介
+             withGoodsPrice:(NSString *)goodsPrice                           //20.商品价格
+               withGoodsURL:(NSString *)goodsURL                             //21.商品链接，点击“发送链接”按钮发送给客服
+        withGoodsCallbackID:(NSString *)goodsCallbackID                      //22.点击商品区域回调参数
+    goodsInfoClickedCallback:(void (^)(NSString *goodsCallbackId))goodsInfoClickedCallback //23.点击商品区域回调接口
 
 httpLinkURLClickedCallBack:(void (^)(NSString *url))httpLinkURLClickedCallback //24.点击URL的回调函数，如果不想使用回调,请设置为nil
 faqButtonTouchUpInsideCallback:(void (^)())faqButtonTouchUpInsideCallback;      //25.自定义FAQ常见问题button回调，可在此打开自己的常见问题FAQ页面
