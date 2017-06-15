@@ -247,10 +247,11 @@ faqButtonTouchUpInsideCallback:(void (^)())faqButtonTouchUpInsideCallback;
 //
 -(void) requestMenu:(NSString *)workgroupName;
 //
--(NSString *) persistMessage:(NSString *)content toWorkgroupname:(NSString *)workgroupname withAgentname:(NSString *)agentname isSend:(BOOL)issend;
+-(NSString *) persistMessage:(NSString *)content toWorkgroupname:(NSString *)workgroupname withAgentname:(NSString *)agentname withMessageId:(NSString *)_messageId isSend:(BOOL)issend;
 //
 -(NSString *) persistMessage:(NSString *)content toWorkgroupname:(NSString *)workgroupname withAgentname:(NSString *)agentname
-         withSessionId:(NSString *)sessionid withSendStatus:(int)sendStatus isSend:(BOOL)issend;
+               withSessionId:(NSString *)sessionid withMessageId:(NSString *)_messageId withSendStatus:(int)sendStatus isSend:(BOOL)issend;
+
 //多次获取消息记录，每次获取5条,
 - (NSMutableArray *)getMessagesWith:(NSString *)workgroupname fromOffset:(NSInteger)offset;
 //

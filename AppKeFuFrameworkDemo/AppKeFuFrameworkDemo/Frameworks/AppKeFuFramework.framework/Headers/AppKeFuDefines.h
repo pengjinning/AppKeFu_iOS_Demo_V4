@@ -54,7 +54,8 @@
 #define APPKEFU_TRANSFER_ACCEPT_CHAT                @"appkefu_transfer_accept_chat2"
 #define APPKEFU_HIDE_RATE_BUTTON                    @"appkefu_hide_rate_button"
 #define APPKEFU_HIDE_FAQ_BUTTON                     @"appkefu_hide_faq_button"
-
+#define APPKEFU_MESSAGE_RETRACT                     @"appkefu_message_retract"
+#define APPKEFU_MESSAGE_RETRACT_PREFIX              @"system_message_retracted"
 
 //
 #define APPKEFU_WORKGROUP_NAMESPACE                 @"http://jabber.org/protocol/workgroup"
@@ -63,6 +64,7 @@
 #define APPKEFU_MENU_NAMESPACE                      @"http://jabber.org/protocol/menu"
 #define APPKEFU_TAG_NAMESPACE                       @"http://jabber.org/protocol/tag"
 #define APPKEFU_ROBOT_NAMESPACE                     @"http://jabber.org/protocol/robot"
+#define APPKEFU_EXTINFO_NAMESPACE                   @"http://jabber.org/protocol/extinfo"
 
 #define APPKEFU_SERVICE_RESOURCE                    @"iphone_kefu_sdk"
 #define APPKEFU_ROBOT_NAME                          @"appkefu_robot_name"
@@ -91,6 +93,7 @@
 
 //
 #define APPKEFU_SERVER_DOMAIN                       @"appkefu.com"
+//#define APPKEFU_SERVER_DOMAIN                       @"47.90.33.185"
 #define APPKEFU_IP_SERVER_DOMAIN                    @"121.43.69.144"
 #define APPKEFU_UPLOAD_IMAGEURL                     @"https://upload.appkefu.com/AppKeFu/uploadoss/uploadiOSImage.php"
 #define APPKEFU_UPLOAD_VOICEURL                     @"https://upload.appkefu.com/AppKeFu/uploadoss/uploadiOSVoice.php"

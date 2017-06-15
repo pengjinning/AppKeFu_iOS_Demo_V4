@@ -36,6 +36,9 @@ http://admin.appkefu.com/AppKeFu/doc/ios.html
 
 
 ## 更新日志
+#### 2017-06-15: version 4.8.0
+* 优化界面UI
+
 #### 2017-04-23: version 4.5.0
 * 增加可选隐藏 FAQ和满意度 参数
 
