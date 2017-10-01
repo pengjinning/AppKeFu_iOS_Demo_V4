@@ -92,8 +92,9 @@
 #define APPKEFU_REMOVE_DEVICETOKEN                  @"https://upload.appkefu.com/AppKeFu/apis/removeDeviceToken.php?username=%@&appkey=%@"
 
 //
-#define APPKEFU_SERVER_DOMAIN                       @"appkefu.com"
+//#define APPKEFU_SERVER_DOMAIN                       @"appkefu.com"
 //#define APPKEFU_SERVER_DOMAIN                       @"47.90.33.185"
+#define APPKEFU_SERVER_DOMAIN                       @"xmpp.weikefu.net"
 #define APPKEFU_IP_SERVER_DOMAIN                    @"121.43.69.144"
 #define APPKEFU_UPLOAD_IMAGEURL                     @"https://upload.appkefu.com/AppKeFu/uploadoss/uploadiOSImage.php"
 #define APPKEFU_UPLOAD_VOICEURL                     @"https://upload.appkefu.com/AppKeFu/uploadoss/uploadiOSVoice.php"

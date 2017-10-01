@@ -36,6 +36,10 @@ http://admin.appkefu.com/AppKeFu/doc/ios.html
 
 
 ## 更新日志
+
+#### 2017-10-01: version 4.9.2
+* 启用新域名weikefu.net
+
 #### 2017-06-15: version 4.8.0
 * 优化界面UI
 
