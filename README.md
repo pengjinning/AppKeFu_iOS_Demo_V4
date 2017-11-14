@@ -37,6 +37,9 @@ http://admin.appkefu.com/AppKeFu/doc/ios.html
 
 ## 更新日志
 
+#### 2017-11-15: version 4.9.3
+* 完善上传功能
+
 #### 2017-10-01: version 4.9.2
 * 启用新域名weikefu.net
 
