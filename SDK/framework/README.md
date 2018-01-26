@@ -16,7 +16,8 @@
 三：
  离线消息推送，管理后台上传.pem，请参加官网指南
  
-  
+四：
+ 正式发布的时候，使用release文件夹里面的AppKeFuFramework.framework替换
 
 
 

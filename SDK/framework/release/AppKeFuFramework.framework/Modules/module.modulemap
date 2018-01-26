@@ -1,0 +1,6 @@
+framework module AppKeFuFramework {
+  umbrella header "AppKeFuFramework.h"
+
+  export *
+  module * { export * }
+}

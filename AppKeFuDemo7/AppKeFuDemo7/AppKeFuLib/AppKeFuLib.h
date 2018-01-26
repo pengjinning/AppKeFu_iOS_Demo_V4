@@ -3,7 +3,7 @@
 //  AppKeFuLib7
 //
 //  Created by jack on 15/9/21.
-//  Copyright © 2015年 appkefu.com. All rights reserved.
+//  Copyright © 2015年 weikefu.net. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -56,7 +56,7 @@ typedef enum {
 //查看sdk版本
 -(NSString *)version;
 
-//2.登录, appkey需要开发者到 http://appkefu.com 申请
+//2.登录, appkey需要开发者到 http://weikefu.net 申请
 -(void)loginWithAppkey:(NSString *)appkey;
 
 //2.1第二种登录方式. 开发者可自定义username，其中：username长度>=6, 用户名不能包含汉字，只能为: 数字、字母和下划线_ 的组合
