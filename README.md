@@ -1,7 +1,7 @@
 # 微客服(Depreciated)
 iOS客服demo 4.x 版本 - 致力于为开发者提供极致用户体验的SDK
 
-## 请前往新平台
+## 此仓库已经停止支持，请前往新平台
 
 - [萝卜丝·云客服](https://github.com/pengjinning/bytedesk-ios)
 
